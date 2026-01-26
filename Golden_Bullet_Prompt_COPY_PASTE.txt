@@ -1,0 +1,271 @@
+================================================================================
+                         GOLDEN BULLET PROMPT
+              Complete 60-Minute Micro-Course Generator
+================================================================================
+
+HOW TO USE:
+1. Copy everything between "START OF PROMPT" and "END OF PROMPT"
+2. Replace [COURSE_TOPIC] with your actual topic
+3. Paste into ChatGPT-4, Claude, or any advanced AI
+4. If output is truncated, type "continue" to get remaining content
+
+================================================================================
+═══════════════════════ START OF PROMPT ═══════════════════════
+================================================================================
+
+You are an expert instructional designer and course creator. Create a COMPLETE 60-minute micro-learning course on the topic: [COURSE_TOPIC]
+
+TARGET AUDIENCE: Working professionals across all industries who want to master this topic in one focused hour.
+
+LEARNING GOAL: By the end of this course, learners will have a thorough, practical understanding of [COURSE_TOPIC] and be able to apply it immediately in their work.
+
+═══════════════════════════════════════════════════════════════
+GENERATE ALL OF THE FOLLOWING OUTPUTS:
+═══════════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 1: COURSE METADATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Provide:
+• Course Title (compelling, keyword-rich, under 60 characters)
+• Subtitle (benefit-focused, under 120 characters)
+• 5 Learning Objectives (start with action verbs: Understand, Apply, Analyze, Create, Evaluate)
+• Prerequisites (keep minimal - this is for beginners to intermediate)
+• Target Audience (3 specific professional roles who benefit most)
+• 10 SEO Keywords for Udemy search optimization
+• Course Description (150-200 words, benefit-focused, includes keywords naturally)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 2: COMPLETE VIDEO SCRIPT WITH TIMING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Write a complete, word-for-word narration script following this EXACT structure:
+
+SECTION 1: INTRODUCTION (3 minutes)
+[0:00-0:30] Hook - Start with a compelling question, statistic, or scenario
+[0:30-1:30] What You Will Learn - State 3-4 clear outcomes
+[1:30-3:00] Why This Matters - Real-world relevance and benefits
+
+SECTION 2: FOUNDATION (4 minutes)
+[3:00-5:00] Definition & Context - What is [TOPIC] and where does it fit?
+[5:00-7:00] Brief History/Evolution - How did we get here? (keep concise)
+
+SECTION 3: CORE CONCEPT 1 (10 minutes)
+[7:00-9:00] Concept Explanation - Clear definition and principles
+[9:00-12:00] Step-by-Step Breakdown - How it works in detail
+[12:00-15:00] Example 1 - Real-world application with walkthrough
+[15:00-17:00] Common Mistakes - What to avoid
+
+SECTION 4: CORE CONCEPT 2 (10 minutes)
+[17:00-19:00] Concept Explanation - Clear definition and principles
+[19:00-22:00] Step-by-Step Breakdown - How it works in detail
+[22:00-25:00] Example 2 - Different context/industry application
+[25:00-27:00] Pro Tips - Expert-level insights
+
+SECTION 5: CORE CONCEPT 3 (10 minutes)
+[27:00-29:00] Concept Explanation - Clear definition and principles
+[29:00-32:00] Step-by-Step Breakdown - How it works in detail
+[32:00-35:00] Example 3 - Complex or combined application
+[35:00-37:00] Best Practices - Do's and Don'ts summary
+
+SECTION 6: PRACTICAL APPLICATION (8 minutes)
+[37:00-40:00] Complete Walkthrough - End-to-end demonstration
+[40:00-43:00] Template/Framework Introduction - Tool they can use tomorrow
+[43:00-45:00] Customization Tips - How to adapt to their context
+
+SECTION 7: SUMMARY & CHEAT SHEET (5 minutes)
+[45:00-47:00] Key Takeaways - 5-7 essential points recap
+[47:00-49:00] Quick Reference Review - Walk through the cheat sheet
+[49:00-50:00] Additional Resources - Where to learn more
+
+SECTION 8: ASSESSMENT INTRODUCTION (2 minutes)
+[50:00-51:00] Quiz Overview - What to expect, passing score (70%)
+[51:00-52:00] Tips for Success - How to approach the questions
+
+SECTION 9: CLOSING (2 minutes)
+[52:00-53:00] Congratulations & Encouragement
+[53:00-54:00] Next Steps - What to do after this course
+[54:00-55:00] Call to Action - Practice exercise suggestion
+
+[55:00-60:00] BUFFER FOR QUIZ COMPLETION
+
+Format the script as:
+[TIMESTAMP] 
+VISUAL: [What appears on screen]
+NARRATION: "[Exact words to speak]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 3: PRESENTATION SLIDES (30 SLIDES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create 30 slides with this format for each:
+
+SLIDE [NUMBER]: [TITLE]
+• Bullet 1 (max 8 words)
+• Bullet 2 (max 8 words)  
+• Bullet 3 (max 8 words)
+• Bullet 4 (if needed, max 8 words)
+[VISUAL SUGGESTION: Describe icon, diagram, or image to include]
+[SPEAKER NOTES: 2-3 sentences of additional context]
+
+Slide Distribution:
+- Slides 1-3: Introduction
+- Slides 4-5: Foundation
+- Slides 6-12: Core Concept 1
+- Slides 13-19: Core Concept 2
+- Slides 20-26: Core Concept 3
+- Slides 27-28: Practical Application
+- Slides 29-30: Summary & Close
+
+Design Guidelines:
+- Maximum 4 bullet points per slide
+- Maximum 8 words per bullet
+- One key idea per slide
+- Include visual suggestion for every slide
+- Use consistent formatting throughout
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 4: ASSESSMENT QUIZ (15 QUESTIONS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create 15 questions using this format:
+
+Q[NUMBER]: [QUESTION TEXT]
+Type: [Multiple Choice / True-False]
+A) [Option A]
+B) [Option B]
+C) [Option C]
+D) [Option D]
+Correct Answer: [Letter]
+Explanation: [Why this is correct - 1-2 sentences]
+Concept Tested: [Which core concept this tests]
+
+Question Distribution:
+- Questions 1-5: Core Concept 1 (mix of recall and application)
+- Questions 6-10: Core Concept 2 (mix of recall and application)
+- Questions 11-13: Core Concept 3 (mix of recall and application)
+- Questions 14-15: Scenario-based (tests combined understanding)
+
+Question Types:
+- 10 Multiple Choice questions
+- 3 True/False questions  
+- 2 Scenario-based questions
+
+Difficulty Mix:
+- 5 Easy (direct recall)
+- 7 Medium (understanding/application)
+- 3 Hard (analysis/scenario)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 5: ONE-PAGE CHEAT SHEET
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Create a downloadable quick-reference guide with:
+
+HEADER: [COURSE_TOPIC] - Quick Reference Guide
+
+SECTION 1: KEY DEFINITIONS (3-5 terms with concise definitions)
+
+SECTION 2: CORE CONCEPT 1 SUMMARY
+• Key principle in one sentence
+• 3-step process or framework
+• One formula/rule to remember
+
+SECTION 3: CORE CONCEPT 2 SUMMARY  
+• Key principle in one sentence
+• 3-step process or framework
+• One formula/rule to remember
+
+SECTION 4: CORE CONCEPT 3 SUMMARY
+• Key principle in one sentence
+• 3-step process or framework
+• One formula/rule to remember
+
+SECTION 5: DO'S AND DON'TS
+DO: [5 best practices]
+DON'T: [5 common mistakes]
+
+SECTION 6: QUICK CHECKLIST
+□ Step 1: [Action]
+□ Step 2: [Action]
+□ Step 3: [Action]
+□ Step 4: [Action]
+□ Step 5: [Action]
+
+FOOTER: "Complete [COURSE_TOPIC] course at [Your Udemy Profile]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OUTPUT 6: BONUS - THUMBNAIL TEXT SUGGESTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Provide 3 thumbnail text options:
+1. [Main text - 3-4 words max]
+2. [Main text - 3-4 words max]  
+3. [Main text - 3-4 words max]
+
+Each should be:
+- Bold and attention-grabbing
+- Communicate the core benefit
+- Work visually on small mobile screens
+
+═══════════════════════════════════════════════════════════════
+QUALITY REQUIREMENTS:
+═══════════════════════════════════════════════════════════════
+
+1. ACCURACY: All information must be factually correct and current
+2. PRACTICAL: Every concept must include real-world application
+3. ENGAGING: Use conversational tone, stories, and examples
+4. COMPLETE: Learner should need no additional resources to understand the topic
+5. PROFESSIONAL: Suitable for corporate learning environments
+6. TIMING: Script must fit within stated time allocations
+7. ACTIONABLE: Learner can apply knowledge immediately after the course
+
+Now generate all 6 outputs for: [COURSE_TOPIC]
+
+================================================================================
+═══════════════════════ END OF PROMPT ═══════════════════════
+================================================================================
+
+
+================================================================================
+                           EXAMPLE TOPICS
+================================================================================
+
+Replace [COURSE_TOPIC] with topics like:
+
+• Root Cause Analysis using 5 Whys Technique
+• FMEA Fundamentals for Process Improvement
+• Advanced Prompt Engineering for ChatGPT
+• Lean 5S Workplace Organization
+• Fishbone Diagram for Problem Solving
+• Analytical Thinking for Business Professionals
+• Process Mapping with SIPOC Diagrams
+• Six Sigma DMAIC Methodology Overview
+• Kaizen Event Planning and Execution
+• Gen AI for Complete Beginners
+
+================================================================================
+                        PRODUCTION WORKFLOW
+================================================================================
+
+1. Run the Golden Bullet Prompt → Get all content
+2. Review & customize the script for your voice
+3. Create slides in PowerPoint/Canva using slide content
+4. Record video using the script (screen + voiceover)
+5. Format cheat sheet as downloadable PDF
+6. Add quiz to Udemy using the question bank
+7. Upload course with metadata and description
+8. Submit for review → Launch!
+
+================================================================================
+                              TIPS
+================================================================================
+
+• Use Claude or ChatGPT-4 for best quality output
+• Be specific with your topic - "5 Whys Technique" not just "RCA"
+• Review and customize - add your own examples and industry context
+• Run the prompt in one go - don't break it into parts
+• If output is truncated - say "continue" or "complete remaining outputs"
+
+================================================================================
