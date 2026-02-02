@@ -72,7 +72,9 @@ async function generateWithChatterbox(text, outputPath) {
         model: 'chatterbox',
         input: chunks[i],
         voice: 'reference',
-        response_format: 'wav'
+        response_format: 'wav',
+        exaggeration: 0.3,
+        cfg: 5.0
       })
     });
 
