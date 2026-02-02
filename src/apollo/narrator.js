@@ -91,19 +91,37 @@ async function generateWithChatterbox(text, outputPath) {
   if (wavParts.length === 1) {
     fs.renameSync(wavParts[0], wavPath);
   } else {
+    // First normalize all WAV parts to same format (16kHz mono 16-bit) for reliable concat
+    const normalizedParts = [];
+    for (let j = 0; j < wavParts.length; j++) {
+      const normPath = wavParts[j].replace('.wav', '-norm.wav');
+      try {
+        execSync(`ffmpeg -y -i "${wavParts[j]}" -ar 22050 -ac 1 -sample_fmt s16 "${normPath}"`, { stdio: 'pipe' });
+        normalizedParts.push(normPath);
+      } catch (e) {
+        console.error(`     Failed to normalize chunk ${j}: ${e.message}`);
+        normalizedParts.push(wavParts[j]); // Use original as fallback
+      }
+    }
+
     const listFile = outputPath.replace('.mp3', '-list.txt');
-    fs.writeFileSync(listFile, wavParts.map(p => `file '${p}'`).join('\n'));
+    fs.writeFileSync(listFile, normalizedParts.map(p => `file '${path.resolve(p)}'`).join('\n'));
     try {
       execSync(`ffmpeg -y -f concat -safe 0 -i "${listFile}" -c copy "${wavPath}"`, { stdio: 'pipe' });
-    } catch {
-      fs.renameSync(wavParts[0], wavPath);
+      const duration = parseFloat(execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${wavPath}"`, { encoding: 'utf-8' }).trim());
+      console.log(`     Concatenated ${normalizedParts.length} chunks → ${duration.toFixed(1)}s`);
+    } catch (e) {
+      console.error(`     Concat failed: ${e.message}, using first chunk only`);
+      fs.copyFileSync(normalizedParts[0], wavPath);
     }
-    fs.unlinkSync(listFile);
-    for (const p of wavParts) { try { fs.unlinkSync(p); } catch {} }
+    try { fs.unlinkSync(listFile); } catch {}
+    for (const p of [...wavParts, ...normalizedParts]) { try { fs.unlinkSync(p); } catch {} }
   }
 
   try {
     execSync(`ffmpeg -y -i "${wavPath}" -codec:a libmp3lame -b:a 192k "${outputPath}"`, { stdio: 'pipe' });
+    const mp3Duration = parseFloat(execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${outputPath}"`, { encoding: 'utf-8' }).trim());
+    console.log(`     Final audio: ${mp3Duration.toFixed(1)}s`);
     fs.unlinkSync(wavPath);
   } catch {
     fs.renameSync(wavPath, outputPath);

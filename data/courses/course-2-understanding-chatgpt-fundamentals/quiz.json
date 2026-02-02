@@ -1,0 +1,224 @@
+{
+  "title": "Course Assessment",
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "What is the 'T' in ChatGPT an acronym for?",
+      "type": "mcq",
+      "options": [
+        "A) Transformer",
+        "B) Turing",
+        "C) Training",
+        "D) Text"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The 'T' stands for Transformer, which is a neural network architecture introduced in 2017. This architecture is highly effective at understanding context in sequential data like text, which was a major breakthrough for language models.",
+      "difficulty": "easy",
+      "conceptTested": "Foundation"
+    },
+    {
+      "questionNumber": 2,
+      "question": "What is the primary purpose of assigning a 'Role' or 'Persona' in a prompt?",
+      "type": "mcq",
+      "options": [
+        "A) To confuse the AI",
+        "B) To make the prompt longer",
+        "C) To prime the AI to adopt a specific tone, vocabulary, and knowledge base",
+        "D) To test the AI's memory"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Assigning a role (e.g., 'Act as an expert copywriter') helps the model narrow its focus. It primes the AI to access the patterns, language, and stylistic conventions associated with that role from its training data, leading to a more relevant and higher-quality response.",
+      "difficulty": "easy",
+      "conceptTested": "Core Concept 1"
+    },
+    {
+      "questionNumber": 3,
+      "question": "The term for when an AI model confidently states false information is known as:",
+      "type": "mcq",
+      "options": [
+        "A) Bug",
+        "B) Glitch",
+        "C) Hallucination",
+        "D) Feature"
+      ],
+      "correctAnswer": "C",
+      "explanation": "A 'hallucination' is the correct term for when an AI generates text that is factually incorrect, nonsensical, or disconnected from reality, but presents it as if it were true. This is a key limitation to be aware of.",
+      "difficulty": "easy",
+      "conceptTested": "Core Concept 3"
+    },
+    {
+      "questionNumber": 4,
+      "question": "Which prompting technique involves providing several input-output examples to the AI before giving the actual task?",
+      "type": "mcq",
+      "options": [
+        "A) Zero-Shot Prompting",
+        "B) Chain-of-Thought Prompting",
+        "C) Role-Playing Prompting",
+        "D) Few-Shot Prompting"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Few-Shot Prompting is the technique of showing the model a few examples of the task you want it to perform. This helps the AI understand the desired pattern and format, leading to more accurate and structured outputs.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 2"
+    },
+    {
+      "questionNumber": 5,
+      "question": "According to the P.A.C.T. framework, which component provides the 'why' and background details for your request?",
+      "type": "mcq",
+      "options": [
+        "A) Persona",
+        "B) Action",
+        "C) Context",
+        "D) Tone"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The 'Context' component is where you provide all the necessary background information, such as the target audience, goals, constraints, and any other details the AI needs to produce a tailored and relevant response.",
+      "difficulty": "easy",
+      "conceptTested": "Practical Application"
+    },
+    {
+      "questionNumber": 6,
+      "question": "What is the primary benefit of using 'Chain-of-Thought' prompting?",
+      "type": "mcq",
+      "options": [
+        "A) It makes the AI's response shorter.",
+        "B) It improves the AI's ability to reason through multi-step problems.",
+        "C) It guarantees a factually correct answer.",
+        "D) It forces the AI to use a specific persona."
+      ],
+      "correctAnswer": "B",
+      "explanation": "By asking the AI to 'think step-by-step,' Chain-of-Thought prompting forces the model to break down a problem and show its work. This externalized reasoning process significantly increases the chances of arriving at a correct or logical conclusion for complex tasks.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 2"
+    },
+    {
+      "questionNumber": 7,
+      "question": "Which of the following is a recommended best practice for responsible AI use?",
+      "type": "mcq",
+      "options": [
+        "A) Trusting the first output as the final version.",
+        "B) Inputting sensitive company financial data to get accurate analysis.",
+        "C) Using the AI as a co-pilot with human oversight.",
+        "D) Assuming all statistics provided by the AI are accurate."
+      ],
+      "correctAnswer": "C",
+      "explanation": "The 'co-pilot, not autopilot' principle is crucial. Responsible AI use requires maintaining human oversight to review, edit, and validate the AI's output, ensuring accuracy and alignment with goals. The other options represent risky or incorrect practices.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 3"
+    },
+    {
+      "questionNumber": 8,
+      "question": "The 2017 research paper 'Attention Is All You Need' was significant because it introduced the:",
+      "type": "mcq",
+      "options": [
+        "A) Concept of the Turing Test",
+        "B) First chatbot, ELIZA",
+        "C) Transformer architecture",
+        "D) Python programming language"
+      ],
+      "correctAnswer": "C",
+      "explanation": "This paper from Google researchers introduced the Transformer architecture, which was a breakthrough in how models could handle context and dependencies in language. It is the foundational technology behind the GPT series of models.",
+      "difficulty": "hard",
+      "conceptTested": "Foundation"
+    },
+    {
+      "questionNumber": 9,
+      "question": "In the V.E.R.I.F.Y. checklist, what does the 'F' stand for?",
+      "type": "mcq",
+      "options": [
+        "A) Find more examples",
+        "B) Forbid Your sensitive data",
+        "C) Format the output",
+        "D) Follow up with questions"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The 'F' in V.E.R.I.F.Y. stands for 'Forbid Your sensitive data.' This is a critical reminder about data privacy and security—never input personal, proprietary, or confidential information into a public AI tool.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 3"
+    },
+    {
+      "questionNumber": 10,
+      "question": "Which of the following is the LEAST effective prompt?",
+      "type": "mcq",
+      "options": [
+        "A) 'Act as a travel agent. Create a 3-day itinerary for a trip to Paris focused on art museums. The budget is $150 per day.'",
+        "B) 'Tell me about Rome.'",
+        "C) 'Summarize the provided article into five bullet points for a busy executive.'",
+        "D) 'Translate the phrase 'Hello, how are you?' into Spanish.'"
+      ],
+      "correctAnswer": "B",
+      "explanation": "The prompt 'Tell me about Rome' is extremely vague. It lacks a clear task, context, persona, or format. The other options are all specific and provide the AI with enough information to generate a useful response.",
+      "difficulty": "easy",
+      "conceptTested": "Core Concept 1"
+    },
+    {
+      "questionNumber": 11,
+      "question": "It is safe to input confidential employee performance reviews into ChatGPT to ask for a summary.",
+      "type": "truefalse",
+      "options": [
+        "A) True",
+        "B) False"
+      ],
+      "correctAnswer": "B",
+      "explanation": "False. You should never input sensitive, confidential, or proprietary information into public AI tools. There are significant privacy and security risks, as this data could potentially be used for training or be exposed.",
+      "difficulty": "easy",
+      "conceptTested": "Core Concept 3"
+    },
+    {
+      "questionNumber": 12,
+      "question": "The P.A.C.T. framework is an acronym for Persona, Action, Context, and Tone.",
+      "type": "truefalse",
+      "options": [
+        "A) True",
+        "B) False"
+      ],
+      "correctAnswer": "A",
+      "explanation": "True. The P.A.C.T. framework is a reusable template for creating effective prompts by defining the Persona (who the AI is), the Action (what it should do), the Context (background info), and the Tone (how it should sound).",
+      "difficulty": "easy",
+      "conceptTested": "Practical Application"
+    },
+    {
+      "questionNumber": 13,
+      "question": "ChatGPT's knowledge is always up-to-date with events that happened yesterday.",
+      "type": "truefalse",
+      "options": [
+        "A) True",
+        "B) False"
+      ],
+      "correctAnswer": "B",
+      "explanation": "False. Language models like ChatGPT are 'pre-trained' on a dataset up to a specific point in time, known as the 'knowledge cutoff.' They do not have real-time access to the internet and are unaware of very recent events.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 3"
+    },
+    {
+      "questionNumber": 14,
+      "question": "A marketing manager wants to create an email campaign for a new product. Which of the following prompts is most likely to produce the best result?",
+      "type": "scenario",
+      "options": [
+        "A) 'Write a marketing email.'",
+        "B) 'Write a marketing email for our new productivity app, 'FocusFlow'.'",
+        "C) 'Act as an expert email marketer. Write a 3-part email drip campaign to launch our new app, 'FocusFlow'. The target audience is freelance creatives who struggle with time management. The tone should be inspiring and empathetic. The goal is to get them to sign up for a free trial.'",
+        "D) 'Our new app is called 'FocusFlow'. Please create some marketing content for it, like an email.'"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is the strongest prompt because it effectively uses all elements of the P.A.C.T. framework. It defines a Persona (expert email marketer), a clear Action (write a 3-part campaign), rich Context (app name, target audience, their pain points, campaign goal), and a specific Tone (inspiring and empathetic). The other options are too vague.",
+      "difficulty": "medium",
+      "conceptTested": "Core Concept 1"
+    },
+    {
+      "questionNumber": 15,
+      "question": "A user asks ChatGPT for the current world record for the 100-meter dash and it provides a name and a time. What is the most responsible next step for the user?",
+      "type": "scenario",
+      "options": [
+        "A) Immediately use the information in a report, as ChatGPT is generally accurate.",
+        "B) Ask ChatGPT to double-check its own answer.",
+        "C) Assume the information is a hallucination and ignore it.",
+        "D) Independently verify the name and time using a reliable external source like the official World Athletics website."
+      ],
+      "correctAnswer": "D",
+      "explanation": "This scenario tests the 'Never Trust, Always Verify' principle. The most responsible action is to treat the AI's output as unverified and cross-check the specific fact (a world record) with an authoritative, independent source. Asking the AI to check itself is unreliable, and simply assuming it's wrong or right are both poor practices.",
+      "difficulty": "hard",
+      "conceptTested": "Core Concept 3"
+    }
+  ]
+}

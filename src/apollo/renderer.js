@@ -12,8 +12,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const VIDEO_CONFIG = {
-  width: 1920,
-  height: 1080,
+  width: 3840,
+  height: 2160,
   fps: 30,
   codec: 'libx264',
   audioCodec: 'aac',
@@ -74,7 +74,11 @@ async function renderWithFFmpeg(slides, audioPath, outputPath) {
   for (let i = 0; i < slides.length; i++) {
     const slide = slides[i];
     const imgPath = path.join(tempDir, `slide-${String(i + 1).padStart(3, '0')}.png`);
-    await createSlideImage(slide, imgPath);
+    await createSlideImage(slide, imgPath, {
+      courseTitle: slides._courseTitle || '',
+      slideNum: i + 1,
+      totalSlides: slides.length
+    });
     slideFiles.push(imgPath);
   }
 
@@ -87,7 +91,7 @@ async function renderWithFFmpeg(slides, audioPath, outputPath) {
 
   // Create video from slides
   const tempVideo = outputPath.replace('.mp4', '-temp.mp4');
-  execSync(`ffmpeg -y -f concat -safe 0 -i "${listFile}" -vsync vfr -pix_fmt yuv420p -c:v ${VIDEO_CONFIG.codec} -crf ${VIDEO_CONFIG.crf} "${tempVideo}"`, { stdio: 'pipe' });
+  execSync(`ffmpeg -y -f concat -safe 0 -i "${listFile}" -vsync vfr -pix_fmt yuv420p -s ${VIDEO_CONFIG.width}x${VIDEO_CONFIG.height} -c:v ${VIDEO_CONFIG.codec} -crf ${VIDEO_CONFIG.crf} "${tempVideo}"`, { stdio: 'pipe' });
 
   // Add audio
   if (audioPath && fs.existsSync(audioPath)) {
@@ -103,16 +107,86 @@ async function renderWithFFmpeg(slides, audioPath, outputPath) {
   return { success: true, outputPath, method: 'ffmpeg' };
 }
 
-async function createSlideImage(slide, outputPath) {
-  const title = escapeXml(slide.title || '').substring(0, 60);
-  const bullets = (slide.content || []).slice(0, 6).map(b => escapeXml(b).substring(0, 80));
-  const bulletsSvg = bullets.map((b, i) => `<text x="120" y="${380 + i * 70}" font-family="Arial" font-size="36" fill="#333333">• ${b}</text>`).join('\n');
+async function createSlideImage(slide, outputPath, meta = {}) {
+  const W = 3840, H = 2160;
+  const title = escapeXml(slide.title || '').substring(0, 70);
+  const bullets = (slide.content || []).slice(0, 7).map(b => escapeXml(b).substring(0, 100));
+  const courseTitle = escapeXml(meta.courseTitle || '');
+  const slideNum = meta.slideNum || '';
+  const totalSlides = meta.totalSlides || '';
 
-  const svg = `<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100%" height="100%" fill="#FFFFFF"/>
-    <rect x="0" y="0" width="1920" height="200" fill="#1a1a2e"/>
-    <text x="100" y="130" font-family="Arial" font-size="52" font-weight="bold" fill="white">${title}</text>
+  // Decorative background circles (abstract geometry)
+  const decoCircles = [
+    `<circle cx="3400" cy="400" r="500" fill="#7c3aed" opacity="0.07"/>`,
+    `<circle cx="3600" cy="1800" r="350" fill="#2563eb" opacity="0.06"/>`,
+    `<circle cx="300" cy="1900" r="400" fill="#7c3aed" opacity="0.05"/>`,
+    `<circle cx="1920" cy="1080" r="700" fill="#1e40af" opacity="0.03"/>`,
+  ].join('\n');
+
+  // Bullet items with glass-style cards
+  const bulletsSvg = bullets.map((b, i) => {
+    const y = 700 + i * 170;
+    return `
+      <rect x="200" y="${y - 55}" width="3440" height="130" rx="20" fill="#ffffff" opacity="0.05"/>
+      <rect x="200" y="${y - 55}" width="6" height="130" rx="3" fill="#a78bfa"/>
+      <circle cx="260" cy="${y + 10}" r="12" fill="#8b5cf6"/>
+      <text x="310" y="${y + 20}" font-family="Segoe UI, Helvetica, Arial" font-size="58" fill="#ddd6fe">${b}</text>`;
+  }).join('\n');
+
+  // Progress bar at bottom based on slide position
+  const progressWidth = totalSlides ? Math.round((slideNum / totalSlides) * W) : 0;
+
+  const svg = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+        <stop offset="0%" stop-color="#0f0c29"/>
+        <stop offset="40%" stop-color="#1a1145"/>
+        <stop offset="100%" stop-color="#120e2e"/>
+      </linearGradient>
+      <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0.5">
+        <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#1e40af" stop-opacity="0.15"/>
+      </linearGradient>
+      <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#8b5cf6"/>
+        <stop offset="100%" stop-color="#3b82f6"/>
+      </linearGradient>
+      <linearGradient id="progressGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#7c3aed"/>
+        <stop offset="100%" stop-color="#2563eb"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="100%" height="100%" fill="url(#bg)"/>
+    ${decoCircles}
+
+    <!-- Header zone -->
+    <rect x="0" y="0" width="${W}" height="500" fill="url(#headerGrad)"/>
+    <rect x="0" y="490" width="${W}" height="2" fill="#8b5cf6" opacity="0.3"/>
+
+    <!-- Accent bar under title -->
+    <rect x="200" y="420" width="320" height="8" rx="4" fill="url(#accent)"/>
+
+    <!-- Title -->
+    <text x="200" y="340" font-family="Segoe UI, Helvetica, Arial" font-size="96" font-weight="bold" fill="#ffffff" letter-spacing="-1">${title}</text>
+
+    <!-- Slide number badge -->
+    ${slideNum ? `
+    <rect x="${W - 320}" y="60" width="220" height="80" rx="40" fill="#ffffff" opacity="0.08"/>
+    <text x="${W - 210}" y="115" font-family="Segoe UI, Helvetica, Arial" font-size="40" fill="#a5b4fc" text-anchor="middle">${slideNum} / ${totalSlides}</text>
+    ` : ''}
+
+    <!-- Bullet content -->
     ${bulletsSvg}
+
+    <!-- Footer -->
+    <rect x="0" y="${H - 100}" width="${W}" height="100" fill="#0a0820" opacity="0.6"/>
+    ${courseTitle ? `<text x="200" y="${H - 42}" font-family="Segoe UI, Helvetica, Arial" font-size="38" fill="#6366a0">${courseTitle}</text>` : ''}
+
+    <!-- Progress bar -->
+    <rect x="0" y="${H - 8}" width="${W}" height="8" fill="#1e1b4b"/>
+    ${progressWidth > 0 ? `<rect x="0" y="${H - 8}" width="${progressWidth}" height="8" fill="url(#progressGrad)"/>` : ''}
   </svg>`;
 
   await require('sharp')(Buffer.from(svg)).png().toFile(outputPath);
@@ -147,6 +221,7 @@ async function renderCourseVideos(courseContent, outputDir, options = {}) {
     for (const lecture of section.lectures || []) {
       results.totalLectures++;
       const slides = lecture.slides || [];
+      slides._courseTitle = courseContent.title || '';
       if (slides.length === 0) {
         console.log(`   Skip lecture ${lectureIndex}: no slides`);
         results.failedRenders++;

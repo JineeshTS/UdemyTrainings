@@ -1,0 +1,1106 @@
+{
+  "metadata": {
+    "title": "Understanding ChatGPT Fundamentals",
+    "subtitle": "Master the basics of ChatGPT to boost your productivity, creativity, and professional communication in just 60 minutes.",
+    "description": "Welcome to 'Understanding ChatGPT Fundamentals,' the definitive one-hour course designed for working professionals who want to leverage the power of generative AI without getting lost in technical jargon. In today's fast-paced business environment, the ability to effectively use tools like ChatGPT is no longer a niche skill—it's a core competency that can dramatically enhance your efficiency, creativity, and overall impact.\n\nThis course is built on a foundation of practical, real-world application. We'll move beyond simple tricks and dive into the foundational principles that separate a novice user from a power user. You will learn not just *what* to do, but *why* it works, grounded in established concepts of how Large Language Models operate. We will demystify the technology, starting with a clear definition of what ChatGPT is (and isn't) and a brief look at its evolution.\n\nThe core of this course is dedicated to the art and science of prompt engineering. You will master a simple yet powerful framework for crafting effective prompts that deliver precise, relevant, and high-quality results every time. We'll cover essential techniques like providing role, context, and format, and then move on to more advanced strategies like few-shot and chain-of-thought prompting. Each concept is reinforced with step-by-step walkthroughs, multiple real-world examples from industries like marketing and project management, and a clear breakdown of common mistakes to avoid.\n\nCrucially, we will also address the ethical considerations and limitations of this technology. You'll learn how to identify potential biases, spot AI 'hallucinations,' and implement a verification process to ensure the information you generate is accurate and reliable. We will discuss best practices for data privacy and responsible AI use in a professional setting.\n\nBy the end of this 60-minute journey, you will not only understand the fundamentals of ChatGPT but will also possess a reusable framework and a practical toolkit to apply these skills immediately to your daily work. Whether you're drafting emails, brainstorming marketing copy, summarizing reports, or generating code snippets, this course will equip you with the confidence and competence to use ChatGPT as a powerful professional co-pilot.\n\nEnroll today and take the first step towards mastering one of the most transformative technologies of our time.\n\nAI Disclosure Statement: This course was created with AI assistance for script generation, content structuring, and quiz creation, and was then thoroughly reviewed, edited, and fact-checked by an expert human instructional designer to ensure accuracy, clarity, and educational value.",
+    "objectives": [
+      "Craft effective and precise prompts to get desired outputs from ChatGPT.",
+      "Apply advanced prompting techniques like few-shot and chain-of-thought.",
+      "Identify and mitigate common limitations of AI, such as hallucinations and bias.",
+      "Implement a practical framework for using ChatGPT in real-world professional tasks.",
+      "Understand the ethical considerations and best practices for responsible AI use.",
+      "Boost productivity by integrating ChatGPT into daily workflows for tasks like writing, summarizing, and brainstorming."
+    ],
+    "prerequisites": [
+      "Access to a computer with an internet connection.",
+      "A free or paid OpenAI account to access ChatGPT.",
+      "An eagerness to learn and experiment with new technology."
+    ],
+    "targetAudience": [
+      "Marketing professionals seeking to generate creative copy and campaign ideas.",
+      "Project managers aiming to streamline reporting and documentation.",
+      "Writers and content creators looking to overcome writer's block and accelerate their workflow.",
+      "Business analysts and consultants who need to summarize complex information quickly."
+    ],
+    "keywords": [
+      "ChatGPT",
+      "Generative AI",
+      "Prompt Engineering",
+      "AI for Professionals",
+      "Productivity",
+      "Large Language Models",
+      "AI Fundamentals",
+      "OpenAI",
+      "Artificial Intelligence",
+      "Beginner AI Course"
+    ],
+    "category": "GENERATIVE AI & PROMPT ENGINEERING",
+    "level": "Beginner"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Introduction: Your AI Co-Pilot",
+      "objective": "Understand the course structure, learning outcomes, and the real-world importance of mastering ChatGPT.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Why ChatGPT is Your New Superpower",
+          "duration": 5,
+          "type": "video",
+          "learningObjective": "Recognize the transformative potential of ChatGPT in a professional context and commit to the course learning goals.",
+          "script": {
+            "opening": "Have you ever felt like there aren't enough hours in the day? You're juggling emails, reports, creative briefs, and a dozen other tasks, wishing you had a brilliant assistant to help you cut through the noise. What if I told you that assistant is already here, and it's more powerful than you can imagine? In fact, a significant percentage of professionals are already using AI tools to get ahead. The question is no longer *if* this technology will change your work, but *how* you will adapt to it.",
+            "mainContent": [
+              {
+                "timestamp": "1:00",
+                "topic": "What You Will Learn",
+                "content": "Welcome to 'Understanding ChatGPT Fundamentals.' Over the next hour, we're going to demystify this powerful tool and turn it into your personal productivity co-pilot. My goal is to give you a solid, practical foundation that you can apply the moment you finish this course. First, you will learn the most critical skill of all: the art and science of prompt engineering. You'll discover how to talk to ChatGPT in a way that gets you exactly what you need, moving from vague questions to precise instructions. We'll use a simple, memorable framework to structure your requests for maximum clarity and impact. Second, we'll explore more advanced techniques. This isn't just about asking simple questions. You'll learn how to teach ChatGPT specific formats using examples, a technique called few-shot prompting, and how to guide it through complex reasoning. This is where you unlock its true creative and analytical power. Finally, and most importantly, you will learn to use this tool responsibly. We'll tackle the big topics: understanding its limitations, spotting inaccuracies or 'hallucinations,' and navigating the ethical landscape. You'll learn a simple verification process to ensure the output is reliable and how to protect sensitive information. By the end of our time together, you won't just be a user; you'll be a confident, strategic operator of one of today's most important technologies.",
+                "visualCue": "Show a slide with the three main learning outcomes clearly listed with icons."
+              },
+              {
+                "timestamp": "3:00",
+                "topic": "Why This Matters Right Now",
+                "content": "So, why is this so important, and why now? The professional landscape is undergoing a seismic shift. The adoption of generative AI is happening at an unprecedented speed. This isn't a future trend; it's a present-day reality. Professionals who master these tools are gaining a significant competitive edge. They are automating tedious tasks, freeing up time for high-level strategic thinking. They're generating creative ideas faster, breaking through mental blocks, and producing higher quality work in less time. Think about it: you can draft a marketing plan outline in minutes instead of hours. You can summarize a dense, 50-page report into key bullet points in seconds. You can get a 'second opinion' on a piece of writing instantly. This isn't about replacing human intelligence; it's about augmenting it. Learning to use ChatGPT effectively is like upgrading from a bicycle to a sports car. Both will get you there, but one gives you speed, efficiency, and capabilities you simply didn't have before. Ignoring this shift is like deciding not to learn how to use the internet in the late 1990s. The stakes are high. Those who adapt will thrive, becoming more valuable to their organizations. Those who don't risk being left behind. This course is your on-ramp. It’s your first step to not just keeping up, but leading the way in this new era of work.",
+                "visualCue": "Show a dynamic graphic or animation depicting workflow acceleration, like a slow-moving gear turning into a fast one."
+              }
+            ],
+            "summary": "In summary, this course is your essential guide to ChatGPT. We'll cover crafting perfect prompts, using advanced techniques, and understanding the ethics and limitations. This isn't just a technical skill; it's a fundamental shift in how we work.",
+            "callToAction": "So, if you're ready to unlock your new professional superpower, let's dive into our first section, where we'll build a solid foundation by defining what ChatGPT really is."
+          },
+          "slides": [
+            {
+              "slideNumber": 1,
+              "title": "Welcome to Your AI Co-Pilot",
+              "content": [
+                "The professional assistant you've been waiting for",
+                "Move from overwhelmed to empowered",
+                "Master a transformative technology in 60 minutes"
+              ],
+              "speakerNotes": "Start with the hook, relating to the common professional pain point of being overwhelmed.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 2,
+              "title": "What You Will Learn",
+              "content": [
+                "1. The Art of Prompt Engineering",
+                "2. Advanced Prompting Techniques",
+                "3. Responsible & Ethical AI Use"
+              ],
+              "speakerNotes": "Clearly outline the three core pillars of the course to set expectations.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 3,
+              "title": "Why This Matters Now",
+              "content": [
+                "AI is a fundamental shift in work",
+                "Gain a massive productivity advantage",
+                "Augment your intelligence, don't replace it",
+                "Future-proof your professional skills"
+              ],
+              "speakerNotes": "Create a sense of urgency and relevance, connecting the skill to career growth and security.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "Foundation: What is ChatGPT?",
+      "objective": "Define what a Large Language Model (LLM) is and understand the key historical milestones that led to ChatGPT.",
+      "lectures": [
+        {
+          "lectureNumber": 2,
+          "title": "Demystifying the Technology",
+          "duration": 6,
+          "type": "video",
+          "learningObjective": "Explain what ChatGPT is using clear analogies and define the term 'Large Language Model'.",
+          "script": {
+            "opening": "Have you ever used the autocomplete on your phone or email? You start typing, and it suggests the next word. Now, imagine that autocomplete feature was trained on a massive portion of the internet and could predict not just the next word, but the next sentence, the next paragraph, or an entire essay. At its core, that's the fundamental idea behind ChatGPT.",
+            "mainContent": [
+              {
+                "timestamp": "5:30",
+                "topic": "Definition & Context",
+                "content": "ChatGPT, which stands for Chat Generative Pre-trained Transformer, is a type of generative AI developed by the company OpenAI. Let's break that down. 'Generative' means it creates new content—text, in this case—rather than just analyzing or categorizing existing data. 'Pre-trained' means it has been fed a vast dataset of text and code from the internet, allowing it to learn patterns, grammar, context, facts, and reasoning styles. The 'Transformer' part refers to a specific, powerful neural network architecture that is exceptionally good at understanding context in sequential data, like words in a sentence. Think of it less like a search engine that finds existing answers and more like a reasoning engine that synthesizes new answers based on the patterns it has learned. A great analogy is to think of it as an incredibly knowledgeable and fast intern. You can't just grunt a command at an intern and expect a great result. You need to give them clear instructions, context, and examples. The better your instructions, the better their output. Similarly, the quality of your interaction with ChatGPT is directly proportional to the quality of your input, or what we call 'prompts.' It doesn't 'know' things in the human sense. It doesn't have beliefs or consciousness. It is a sophisticated pattern-matching machine that predicts the most probable sequence of words to answer your query based on its training data.",
+                "visualCue": "Show a diagram comparing a search engine (indexing and retrieving) to a generative model (ingesting and creating)."
+              },
+              {
+                "timestamp": "8:00",
+                "topic": "A Brief History of LLMs",
+                "content": "While ChatGPT might seem like an overnight sensation, it's built on decades of research in artificial intelligence and computational linguistics. The journey started with early concepts like the Turing Test in the 1950s, which proposed a test for a machine's ability to exhibit intelligent behavior equivalent to, or indistinguishable from, that of a human. For many years, AI language systems were rule-based and very brittle. A major leap forward came with machine learning, where systems could learn from data. But the real revolution for models like ChatGPT began in 2017 with a groundbreaking research paper from Google titled 'Attention Is All You Need.' This paper introduced the 'Transformer' architecture I mentioned earlier. This was the key that unlocked the ability for models to handle long-range dependencies in text—meaning, they could remember the context from the beginning of a long paragraph when generating words at the end. This was a massive improvement over previous architectures. Following this, OpenAI released a series of Generative Pre-trained Transformer models, or GPT. GPT-1 was released in 2018, followed by GPT-2 in 2019, which was so powerful at generating coherent text that its full version was initially withheld due to concerns about misuse. Then came GPT-3 in 2020, which was a quantum leap in scale and capability. Finally, in late 2022, OpenAI released ChatGPT, which was a fine-tuned version of a GPT model specifically designed for conversational interaction. Its user-friendly chat interface made this powerful technology accessible to millions, sparking the global phenomenon we see today. Understanding this evolution helps you appreciate that ChatGPT isn't magic; it's the result of a rapid, iterative process of scientific and engineering breakthroughs.",
+                "visualCue": "Show a timeline visual with key milestones: 1950 (Turing Test), 2017 (Transformer Paper), 2020 (GPT-3), 2022 (ChatGPT Launch)."
+              }
+            ],
+            "summary": "So, to recap: ChatGPT is a generative, pre-trained model based on the Transformer architecture. It's a powerful pattern-matching engine, not a thinking being. And its creation is the culmination of decades of research, with the 2017 Transformer paper being a critical turning point.",
+            "callToAction": "Now that we have this foundational understanding, we're ready to dive into our first core concept: how to craft the perfect prompt. Let's get started in the next lecture."
+          },
+          "slides": [
+            {
+              "slideNumber": 4,
+              "title": "What is ChatGPT?",
+              "content": [
+                "A powerful autocomplete, not a search engine",
+                "Generative: Creates new content",
+                "Pre-trained: Learned from vast data",
+                "Transformer: A breakthrough AI architecture"
+              ],
+              "speakerNotes": "Use the autocomplete analogy to make the concept relatable and easy to grasp.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 5,
+              "title": "Analogy: The Expert Intern",
+              "content": [
+                "Incredibly knowledgeable and fast",
+                "Requires clear, specific instructions",
+                "Output quality depends on input quality",
+                "It synthesizes, it doesn't 'think'"
+              ],
+              "speakerNotes": "This analogy helps frame the user's relationship with the AI and introduces the concept of 'garbage in, garbage out'.",
+              "visualType": "image"
+            },
+            {
+              "slideNumber": 6,
+              "title": "Key Historical Milestones",
+              "content": [
+                "1950s: The Turing Test concept",
+                "2017: 'Attention Is All You Need' paper",
+                "2020: GPT-3 demonstrates massive scale",
+                "2022: ChatGPT brings AI to the public"
+              ],
+              "speakerNotes": "Walk through the timeline to show that this technology has a rich history and isn't just a recent fad.",
+              "visualType": "diagram"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Core Concept 1: The Art of the Prompt",
+      "objective": "Learn and apply a foundational framework for writing clear, effective prompts that produce high-quality results.",
+      "lectures": [
+        {
+          "lectureNumber": 3,
+          "title": "From Vague Ideas to Precise Instructions",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Master the four key components of an effective prompt: Role, Task, Context, and Format.",
+          "script": {
+            "opening": "Have you ever asked ChatGPT a question and gotten a generic, unhelpful, or just plain wrong answer? It's a common experience, and it's almost never the AI's fault. It's a problem with the prompt. The single most important rule to remember when working with ChatGPT is 'Garbage In, Garbage Out.' Your results are a direct reflection of your instructions. In this section, we'll fix that forever.",
+            "mainContent": [
+              {
+                "timestamp": "11:30",
+                "topic": "Concept Explanation: The Four Pillars of a Great Prompt",
+                "content": "A prompt is simply the instruction you give to the AI. But a *great* prompt is a carefully crafted piece of communication that leaves no room for ambiguity. Think of yourself as a film director guiding an actor. You wouldn't just say 'Act sad.' You'd give them motivation, backstory, and specific actions to perform. We can break down a great prompt into four key pillars. First is the **Role** or Persona. You need to tell the AI *who* it should be. Is it an expert copywriter? A senior software engineer? A supportive career coach? Assigning a role primes the model to adopt the specific tone, vocabulary, and knowledge base associated with that persona. Second is the **Task**. This is the specific action you want the AI to perform. Be explicit. Don't say 'talk about marketing.' Say 'Write three headlines for a Facebook ad.' Use strong action verbs like 'generate,' 'summarize,' 'translate,' 'critique,' or 'rephrase.' Third is the **Context**. This is the background information, the 'why' behind your request. Why do you need these headlines? Who is the target audience? What is the product? The more relevant context you provide, the more tailored and useful the output will be. This is often the most overlooked but most critical component. Finally, there's the **Format**. How do you want the answer delivered? As a bulleted list? A JSON object? A table with three columns? An email with a formal tone? If you don't specify the format, the AI will guess, and it might guess wrong. By consciously including these four elements—Role, Task, Context, and Format—you transform a simple question into a powerful command.",
+                "visualCue": "Show a slide with four icons representing Role (a mask), Task (a checklist), Context (a puzzle piece), and Format (a document layout)."
+              },
+              {
+                "timestamp": "13:00",
+                "topic": "Step-by-Step Breakdown: The R.T.C.F. Framework",
+                "content": "Let's turn this into an actionable, step-by-step framework. We'll call it R.T.C.F. for Role, Task, Context, and Format. Before you write any prompt, quickly run through these four steps. Step 1: **Define the Role.** Ask yourself, 'Who is the best expert to answer this?' Start your prompt with 'Act as a...' or 'You are a...' For example, 'Act as an expert financial advisor.' Step 2: **State the Task.** What is the single, clear action you need? Use a verb. 'Generate a savings plan.' Don't combine multiple complex tasks into one prompt, at least not when you're starting out. Be direct. 'Summarize the following article.' Step 3: **Provide Context.** This is where you add the crucial details. For our financial advisor prompt, the context would be: 'My monthly income is $5,000, my fixed expenses are $3,000, and my goal is to save for a $10,000 down payment on a house within two years. I have a low risk tolerance.' See how that context changes everything? Without it, any advice would be uselessly generic. Step 4: **Specify the Format.** How do you want the output structured? 'Present the plan as a month-by-month table.' Or 'Provide the summary in five key bullet points.' This step saves you so much time on reformatting later. So, the full prompt becomes a cohesive instruction: 'Act as an expert financial advisor. Generate a savings plan. My monthly income is $5,000, my fixed expenses are $3,000, and my goal is to save for a $10,000 down payment on a house within two years. I have a low risk tolerance. Present the plan as a month-by-month table.' This is worlds away from just asking, 'How can I save for a house?'",
+                "visualCue": "Animate the R.T.C.F. framework being built step-by-step, with each component adding to the final, complete prompt."
+              },
+              {
+                "timestamp": "16:00",
+                "topic": "Example 1: Marketing Copy",
+                "content": "Let's see this in action with a real-world example. Imagine you're a marketing manager for a company that sells a new project management software called 'SyncUp.' You need some social media posts. A **bad prompt** would be: 'Write a tweet about our new software, SyncUp.' What do you think you'll get? Something incredibly generic, like 'Check out SyncUp, the new way to manage projects! #projectmanagement.' It's boring and ineffective. Now, let's apply the R.T.C.F. framework. **Step 1: Role.** 'Act as a senior social media marketing manager specializing in B2B SaaS products.' **Step 2: Task.** 'Generate three distinct tweets for a product launch campaign.' **Step 3: Context.** 'The product is called SyncUp. Its key features are AI-powered task scheduling, real-time collaboration, and seamless integration with Slack and Google Drive. Our target audience is tech startup founders and project managers who are overwhelmed by complexity. The tone should be energetic, confident, and slightly witty.' **Step 4: Format.** 'Each tweet must be under 280 characters, include the hashtag #SyncUp, and end with a call-to-action to visit our website. Provide one tweet focused on features, one on benefits, and one posing a relatable question.' The difference is night and day. With this detailed prompt, ChatGPT can now generate highly targeted, on-brand content that speaks directly to your audience, saving you immense creative energy.",
+                "visualCue": "Show a side-by-side comparison on screen. On the left, the bad prompt and its generic output. On the right, the R.T.C.F. prompt and its much better, detailed output."
+              },
+              {
+                "timestamp": "19:00",
+                "topic": "Common Mistakes to Avoid",
+                "content": "As you start applying this framework, be aware of a few common pitfalls. The first and most frequent mistake is **being too vague**. 'Tell me about history' is a terrible prompt. 'Summarize the key causes of World War II for a high school student' is a good one. Always strive for specificity. The second mistake is **omitting context**. If you ask ChatGPT to write an email without telling it who the recipient is or what your relationship is, you're setting it up for failure. Context is king. The third mistake is **not defining the format**. You'll waste a lot of time copying, pasting, and reformatting if you don't tell the AI exactly how you want the information presented. Ask for tables, lists, or code blocks upfront. Finally, a subtle mistake is **trusting the first output implicitly**. Think of the first response as a first draft. It's a starting point. The real power comes from iterating. Use follow-up prompts to refine the answer. You can say, 'That's good, but make it more concise,' or 'Now write it from the perspective of a skeptical customer.' Don't be afraid to have a conversation to hone the results. Avoiding these simple mistakes will put you in the top 10% of ChatGPT users.",
+                "visualCue": "Show a slide with four 'warning sign' icons, each labeled with a common mistake: Vagueness, No Context, No Format, No Iteration."
+              }
+            ],
+            "summary": "To wrap up, the quality of your output is determined by the quality of your input. Always use the R.T.C.F. framework: assign a Role, state a clear Task, provide all necessary Context, and specify the desired Format. This simple habit will revolutionize your results.",
+            "callToAction": "In the next lecture, we'll build on this foundation and explore some advanced techniques to tackle even more complex tasks. Let's continue."
+          },
+          "slides": [
+            {
+              "slideNumber": 7,
+              "title": "The #1 Rule of ChatGPT",
+              "content": [
+                "\"Garbage In, Garbage Out\""
+              ],
+              "speakerNotes": "Start with this memorable, critical rule to frame the entire lecture.",
+              "visualType": "quote"
+            },
+            {
+              "slideNumber": 8,
+              "title": "The Four Pillars of a Great Prompt",
+              "content": [
+                "ROLE: Who the AI should be",
+                "TASK: What the AI should do",
+                "CONTEXT: The 'why' and background info",
+                "FORMAT: How the output should look"
+              ],
+              "speakerNotes": "Introduce the core concept of the lecture with clear, simple definitions for each pillar.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 9,
+              "title": "Step-by-Step: The R.T.C.F. Framework",
+              "content": [
+                "1. Define the ROLE (Act as a...)",
+                "2. State the TASK (Generate, Summarize...)",
+                "3. Provide CONTEXT (Target audience, goals...)",
+                "4. Specify the FORMAT (Bulleted list, table...)"
+              ],
+              "speakerNotes": "Turn the concept into an actionable, easy-to-remember acronym and process.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 10,
+              "title": "Example: Marketing Copy",
+              "content": [
+                "BAD: 'Write a tweet about our software.'",
+                "GOOD: 'Act as a B2B copywriter...'",
+                "...generate 3 tweets for startup founders...",
+                "...format with hashtags and a CTA.'"
+              ],
+              "speakerNotes": "Use a clear 'before and after' example to make the value of the framework tangible.",
+              "visualType": "comparison"
+            },
+            {
+              "slideNumber": 11,
+              "title": "Common Mistakes to Avoid",
+              "content": [
+                "Vague and ambiguous requests",
+                "Forgetting to provide critical context",
+                "Not specifying the output format",
+                "Accepting the first draft without iterating"
+              ],
+              "speakerNotes": "Address common pitfalls to help students troubleshoot their own prompts effectively.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Core Concept 2: Advanced Prompting Techniques",
+      "objective": "Learn and apply advanced prompting strategies like few-shot and chain-of-thought to handle more complex and nuanced tasks.",
+      "lectures": [
+        {
+          "lectureNumber": 4,
+          "title": "Guiding the AI's 'Thought' Process",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Implement few-shot and chain-of-thought prompting to improve the accuracy and relevance of complex outputs.",
+          "script": {
+            "opening": "You've mastered the basic structure of a great prompt. Now, what happens when the task is more complex than just writing a tweet? What if you need the AI to follow a very specific, non-standard format, or reason through a multi-step problem? This is where we move from giving instructions to actively teaching the AI. Let's explore some advanced techniques.",
+            "mainContent": [
+              {
+                "timestamp": "21:30",
+                "topic": "Concept Explanation: Few-Shot and Chain-of-Thought Prompting",
+                "content": "Two of the most powerful advanced techniques are 'Few-Shot Prompting' and 'Chain-of-Thought Prompting.' Let's start with **Few-Shot Prompting**. The name sounds technical, but the concept is simple: you give the model a few examples of what you want before you ask it to perform the task. Think of it like showing a new employee a few completed reports to demonstrate the correct format before asking them to write their own. By providing these input-output examples, you're showing, not just telling, the AI the exact pattern you want it to follow. This is incredibly useful for tasks involving specific formatting, sentiment analysis, or data extraction where the desired output structure is crucial. The alternative is 'Zero-Shot Prompting,' which is what we did in the last section—just describing the task without examples. Now, for **Chain-of-Thought Prompting**. This technique is designed to improve the AI's ability to reason through complex, multi-step problems. Instead of just asking for the final answer, you instruct the AI to 'think step-by-step' or to 'show its work.' By forcing the model to break down the problem and articulate its reasoning process, you significantly increase the likelihood of it arriving at the correct conclusion. It mimics how humans solve difficult problems—by not jumping to the answer, but by working through the logic. This is a game-changer for math problems, logic puzzles, and complex planning tasks.",
+                "visualCue": "Show a split screen. On one side, an icon for 'Few-Shot' (e.g., 3 examples turning into a new one). On the other, an icon for 'Chain-of-Thought' (e.g., a series of connected gears or steps)."
+              },
+              {
+                "timestamp": "23:00",
+                "topic": "Step-by-Step Breakdown: Implementing Few-Shot Prompting",
+                "content": "Let's walk through how to structure a few-shot prompt. It's a simple, three-part process. Step 1: **State the Goal and Provide Examples.** Begin by clearly stating the overall task. Then, provide 2 to 5 examples. Each example should have a clear input and the corresponding desired output. Use consistent labeling, like 'Input:' and 'Output:', or 'Text:' and 'Summary:'. For instance, 'I will provide a customer review, and you will classify its sentiment as Positive, Negative, or Neutral. Here are some examples:' Then you list them out. Example 1 Input: 'The battery life is amazing!' Output: 'Positive'. Example 2 Input: 'The screen resolution could be better.' Output: 'Neutral'. Example 3 Input: 'The app keeps crashing on my device.' Output: 'Negative'. Step 2: **Provide the New Input.** After your examples, clearly present the new piece of information you want the AI to process. Following our example, you would write: 'Now, classify this review: Input: 'The shipping was fast, but the product feels a bit cheap.'' Step 3: **Prompt for the Output.** Finally, explicitly ask for the output. You can simply write 'Output:' and let the AI complete the pattern. The model will recognize the pattern you've established and apply the same logic to the new input, likely classifying it as 'Neutral' or 'Mixed,' a much more nuanced answer than you might get with a zero-shot prompt. This structure—Goal, Examples, New Input, Prompt for Output—is a reliable recipe for getting precisely formatted results.",
+                "visualCue": "Show a text-based animation building a few-shot prompt. The goal appears, then each example fades in, followed by the new input and a blinking cursor at 'Output:'."
+              },
+              {
+                "timestamp": "26:00",
+                "topic": "Example 2: Standardizing Project Updates",
+                "content": "Let's take a practical business case. A project manager, Sarah, is tired of her team submitting project updates in inconsistent formats. She wants to use ChatGPT to standardize them. A zero-shot prompt like 'Rewrite this update in a standard format' would be unreliable. Instead, Sarah uses **few-shot prompting**. **Step 1: Goal & Examples.** She writes: 'I will provide messy project update notes. You will reformat them into a clear, structured report with three sections: Summary, Blockers, and Next Steps. Here are two examples.' Example 1 Input: 'ok so this week i finished the user login feature. had some trouble with the database but i think it's fixed now. next week i'll start on the profile page.' Output: '**Summary:** Completed the user login feature.\n**Blockers:** Encountered and resolved a database issue.\n**Next Steps:** Begin work on the user profile page.' She provides a second, similar example to reinforce the pattern. **Step 2: New Input.** Then, she pastes in a new, messy update from a team member: 'Input: 'The client feedback from the demo is in, mostly positive stuff. We need to decide on the new button colors. I'm waiting on the API key from the other team which is holding me up. I'll be on vacation the first half of next week.'' **Step 3: Prompt for Output.** She ends with 'Output:'. ChatGPT, having learned the desired structure, will now produce a perfectly formatted report: '**Summary:** Received positive client feedback from the demo.\n**Blockers:** Awaiting API key from another team.\n**Next Steps:** Finalize new button colors. Note: Team member on vacation for the first half of the week.' This creates immediate consistency and saves Sarah hours of administrative work.",
+                "visualCue": "Show a mock interface of a project management tool. A messy text block is shown, which then morphs into a clean, structured report, illustrating the transformation."
+              },
+              {
+                "timestamp": "29:00",
+                "topic": "Pro Tips for Advanced Prompting",
+                "content": "Here are a few pro tips to take these techniques even further. First, **combine techniques**. You can use the R.T.C.F. framework and embed a few-shot or chain-of-thought instruction within it. For example: 'Act as a data analyst. Your task is to extract key information from these reports. Use the following format... [provide examples]... Now, analyze this new report. Explain your reasoning step-by-step.' Second, **use constraints**. Constraints help narrow the AI's focus and improve quality. Add phrases like 'Do not use technical jargon,' 'The response must be under 100 words,' or 'Only use information from the provided text.' This prevents the AI from rambling or pulling in outside, potentially incorrect, information. Third, **iterate on your examples**. If your few-shot prompt isn't working perfectly, look at your examples. Are they clear? Are they consistent? Sometimes, improving the quality of your examples is the key to improving the output. Finally, for chain-of-thought, the magic phrase is often as simple as **'Let's think step by step.'** Adding this one sentence before a complex query can dramatically improve the accuracy of the result, as it forces the model to slow down and externalize its reasoning process before giving a final answer.",
+                "visualCue": "Show a slide with 'Pro Tips' and icons for each: puzzle pieces combining (Combine), a funnel (Constraints), a refresh icon (Iterate), and a brain with gears (Think Step-by-Step)."
+              }
+            ],
+            "summary": "In this section, we've added two powerful tools to your arsenal: Few-Shot Prompting, which uses examples to teach specific formats, and Chain-of-Thought Prompting, which improves reasoning by asking the AI to show its work. These techniques allow you to tackle more complex and nuanced tasks with confidence.",
+            "callToAction": "Now that we can guide the AI's output and reasoning, it's time to address a critical topic: its limitations and the ethical considerations of using it. Let's proceed to the next core concept."
+          },
+          "slides": [
+            {
+              "slideNumber": 12,
+              "title": "Advanced Prompting",
+              "content": [
+                "Moving from simple instructions to teaching",
+                "For complex, nuanced, or multi-step tasks",
+                "Two key techniques:",
+                "Few-Shot & Chain-of-Thought"
+              ],
+              "speakerNotes": "Introduce the next level of prompting, setting the stage for the two main techniques.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 13,
+              "title": "Technique 1: Few-Shot Prompting",
+              "content": [
+                "Show, don't just tell",
+                "Provide 2-5 input/output examples",
+                "Teaches the AI a specific pattern or format",
+                "Ideal for formatting, classification, extraction"
+              ],
+              "speakerNotes": "Explain the concept of Few-Shot prompting using the 'show, don't tell' analogy.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 14,
+              "title": "Technique 2: Chain-of-Thought",
+              "content": [
+                "Ask the AI to 'think step-by-step'",
+                "Forces a logical reasoning process",
+                "Improves accuracy on complex problems",
+                "Great for math, logic, and planning"
+              ],
+              "speakerNotes": "Explain Chain-of-Thought and how it improves reasoning by slowing the AI down.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 15,
+              "title": "Example: Standardizing Reports",
+              "content": [
+                "GOAL: Reformat messy notes",
+                "EXAMPLES: Show 'before' and 'after' format",
+                "NEW INPUT: Paste in a new messy note",
+                "RESULT: A perfectly structured report"
+              ],
+              "speakerNotes": "Walk through the project manager example to provide a concrete, relatable use case for few-shot prompting.",
+              "visualType": "comparison"
+            },
+            {
+              "slideNumber": 16,
+              "title": "Pro Tips",
+              "content": [
+                "Combine techniques for maximum power",
+                "Use constraints to narrow the focus",
+                "Iterate on your examples for better results",
+                "Add 'Let's think step by step'"
+              ],
+              "speakerNotes": "Provide actionable tips that students can use to enhance their advanced prompting skills.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "title": "Core Concept 3: Limitations & Responsible Use",
+      "objective": "Identify the key limitations of ChatGPT, including bias and hallucinations, and learn a framework for using it responsibly and ethically.",
+      "lectures": [
+        {
+          "lectureNumber": 5,
+          "title": "Navigating the Pitfalls: Hallucinations, Bias, and Privacy",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Apply a verification checklist to AI-generated content and understand best practices for data privacy.",
+          "script": {
+            "opening": "Imagine you're using ChatGPT to research a topic for a critical presentation. It gives you a beautifully written paragraph with a compelling statistic from a study. You include it in your report, but later, you discover a horrifying truth: the study doesn't exist. The AI just made it up. This is a very real risk, and understanding how to navigate these pitfalls is what separates a smart user from a reckless one.",
+            "mainContent": [
+              {
+                "timestamp": "31:30",
+                "topic": "Concept Explanation: The Big Three Limitations",
+                "content": "To use ChatGPT responsibly, you must understand its core limitations. There are three you absolutely need to know. First, **Hallucinations**. This is the term for when an AI confidently states false information as if it were fact. It might invent statistics, historical events, or scientific studies. This happens because the model is designed to generate plausible-sounding text, not to be a database of truth. If it doesn't have a direct answer, its pattern-matching nature might lead it to create a 'pattern' that looks like a fact but isn't. It's not lying; it's just completing a pattern incorrectly. Second, **Bias**. ChatGPT was trained on a massive snapshot of the internet, which, as we know, contains a wide range of human biases—societal, cultural, and historical. The model can inadvertently reflect and even amplify these biases in its responses. It might associate certain professions with certain genders or generate stereotyped descriptions. Being aware of this is the first step to countering it. Third, the **Knowledge Cutoff**. The free version of ChatGPT, for instance, has a specific knowledge cutoff date. It doesn't know about events, discoveries, or data that emerged after that point. Asking it about very recent events will result in it either telling you it doesn't know or potentially hallucinating an answer. Always be mindful that you are not interacting with a live, up-to-the-minute source of information.",
+                "visualCue": "Show a slide with three distinct warning icons for Hallucinations (a ghost), Bias (unbalanced scales), and Knowledge Cutoff (a calendar with a date crossed off)."
+              },
+              {
+                "timestamp": "33:00",
+                "topic": "Step-by-Step Breakdown: The V.E.R.I.F.Y. Checklist",
+                "content": "So how do we combat these limitations? By never trusting the output blindly. You need a simple, repeatable process for validation. Let's use the acronym V.E.R.I.F.Y. Step 1: **Validate** critical facts. If the AI gives you a number, a date, a name, or a statistic, assume it's wrong until you can prove it's right. Use a reliable, independent source—like a reputable news site, a scientific journal, or an official report—to cross-check it. Step 2: **Examine** for bias. Read the output with a critical eye. Does it use stereotypes? Does it make assumptions about gender, race, or nationality? If so, prompt the AI to rephrase it from a more neutral perspective or, better yet, edit it yourself. Step 3: **Reference** sources. Ask the AI for its sources. Be warned: it will often hallucinate sources, providing fake URLs or citing papers that don't exist. However, sometimes it can point you in the right direction. The key is to then go and check those sources manually. Never cite a source provided by an AI without first verifying its existence and content. Step 4: **Inject** your own expertise. You are the expert, not the AI. Use it as a tool to generate a first draft, but then you must apply your own knowledge, experience, and unique voice. Edit the text heavily. Correct inaccuracies, refine the tone, and add your own insights. The AI is the co-pilot; you are the pilot. Step 5: **Forbid** Your sensitive data. This is a critical privacy rule. Never, ever paste sensitive personal, financial, or proprietary company information into a public AI tool. Assume that your conversations could be used for training data. Use anonymized or generic data when crafting prompts about sensitive topics. Following this V.E.R.I.F.Y. checklist will protect you and your organization from the risks of inaccurate and irresponsible AI use.",
+                "visualCue": "Animate the V.E.R.I.F.Y. acronym, with each letter and its corresponding action appearing sequentially."
+              },
+              {
+                "timestamp": "36:00",
+                "topic": "Example 3: The Researcher's Dilemma",
+                "content": "Let's consider a high-stakes example. A medical researcher is using ChatGPT to help write a literature review on a new drug. The prompt is: 'Summarize recent studies on the efficacy of Drug X for treating Condition Y.' ChatGPT produces a well-written summary, citing three studies: 'Smith et al. (2022),' 'Jones et al. (2021),' and 'Chen et al. (2023).' The researcher, in a hurry, is tempted to copy this directly into their paper. But instead, they apply the V.E.R.I.F.Y. checklist. **Validate:** They search for 'Smith et al. (2022)' and 'Jones et al. (2021)' in PubMed, a medical research database. They find them, and the AI's summary is reasonably accurate. Great. But when they search for 'Chen et al. (2023),' they find nothing. The study does not exist. It's a complete hallucination. By catching this, the researcher avoids a catastrophic error that could have discredited their entire paper and career. **Inject Expertise:** The researcher then rewrites the summary in their own words, adding their expert interpretation of the two real studies and noting the gap in the literature where the third, fake study was supposed to be. **Forbid Sensitive Data:** Importantly, the researcher was careful not to include any confidential patient data in their original prompt. This simple but rigorous process allowed them to leverage the AI's speed for summarizing while maintaining 100% academic integrity.",
+                "visualCue": "Show a visual of a research paper. A citation 'Chen et al. (2023)' is highlighted in red and stamped with 'HALLUCINATION,' while the other two are checked off in green."
+              },
+              {
+                "timestamp": "39:00",
+                "topic": "Best Practices for Responsible Use",
+                "content": "Let's distill this down into a few clear best practices that should govern all your interactions with generative AI. First, **Assume a Zero-Trust Policy.** Treat every factual claim as unverified until you've confirmed it yourself. This is the single most important mindset to adopt. Second, **Use it for Creativity, Not for Truth.** ChatGPT is an excellent tool for brainstorming, overcoming writer's block, and exploring ideas. It is a less reliable tool for factual recall. Play to its strengths. Third, **Maintain Human Oversight.** Never automate a critical process with ChatGPT without a human in the loop for review and approval. It's a co-pilot, not an autopilot. Fourth, **Protect Your Privacy.** Be aware of your organization's policies on using AI tools. When in doubt, do not input any data that you wouldn't want to be made public. This includes employee information, financial data, and strategic plans. By integrating these principles into your workflow, you can harness the immense benefits of AI while responsibly managing its inherent risks.",
+                "visualCue": "Show a slide with four key icons representing the best practices: a shield (Zero-Trust), a lightbulb (Creativity), a person overseeing a robot (Oversight), and a lock (Privacy)."
+              }
+            ],
+            "summary": "To use ChatGPT safely and effectively, you must be aware of its main limitations: hallucinations, bias, and knowledge cutoffs. Always apply the V.E.R.I.F.Y. checklist to validate facts, examine for bias, and protect sensitive information. Remember, it's a tool for augmentation, not a source of absolute truth.",
+            "callToAction": "We've now covered the core concepts of prompting and responsible use. In the next section, we'll put it all together in a complete, practical walkthrough. Let's move on."
+          },
+          "slides": [
+            {
+              "slideNumber": 17,
+              "title": "The Dangers of Blind Trust",
+              "content": [
+                "AI can and will make mistakes",
+                "Understanding limitations is a critical skill",
+                "Separate the smart user from the reckless one"
+              ],
+              "speakerNotes": "Start with a compelling scenario to highlight the importance of this topic.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 18,
+              "title": "The Three Core Limitations",
+              "content": [
+                "1. Hallucinations (Making things up)",
+                "2. Bias (Reflecting training data flaws)",
+                "3. Knowledge Cutoff (Not up-to-date)"
+              ],
+              "speakerNotes": "Clearly define the three main pitfalls students need to be aware of.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 19,
+              "title": "The V.E.R.I.F.Y. Checklist",
+              "content": [
+                "Validate critical facts",
+                "Examine for bias",
+                "Reference (and check) sources",
+                "Inject your own expertise",
+                "Forbid Your sensitive data"
+              ],
+              "speakerNotes": "Introduce the actionable checklist as a tool for mitigating these risks.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 20,
+              "title": "Example: The Researcher's Dilemma",
+              "content": [
+                "AI generates a summary with 3 sources",
+                "Researcher uses V.E.R.I.F.Y. checklist",
+                "Discovers one source is a hallucination",
+                "Avoids a major professional error"
+              ],
+              "speakerNotes": "Use a high-stakes example to demonstrate the real-world consequences and the value of the checklist.",
+              "visualType": "image"
+            },
+            {
+              "slideNumber": 21,
+              "title": "Best Practices for Responsible Use",
+              "content": [
+                "Assume a Zero-Trust Policy",
+                "Use for Creativity, Not for Truth",
+                "Maintain Human Oversight (Co-pilot, not Autopilot)",
+                "Protect Your Privacy and Proprietary Data"
+              ],
+              "speakerNotes": "Summarize the key principles for ethical and responsible AI interaction.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "title": "Practical Application: From Blank Page to Final Draft",
+      "objective": "Integrate all learned concepts into a single, end-to-end workflow by creating a piece of content using a reusable prompt template.",
+      "lectures": [
+        {
+          "lectureNumber": 6,
+          "title": "Your First AI-Powered Project",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Apply the P.A.C.T. prompt framework to a complete project, from brainstorming to final polish.",
+          "script": {
+            "opening": "Theory is great, but results are better. We've covered the what, why, and how of effective prompting. Now it's time to put it all together and go from a blank page to a finished product. In this section, we'll walk through a complete project, using a simple, powerful template that you can take with you and use every day.",
+            "mainContent": [
+              {
+                "timestamp": "41:30",
+                "topic": "Complete Walkthrough: Creating a Blog Post Outline",
+                "content": "Our project is to create a detailed outline for a blog post. The topic will be 'The Benefits of Remote Work for Employee Well-being.' We'll use a series of prompts to go from initial idea to structured plan. **Prompt 1: Brainstorming.** We'll start broad. 'Act as a content strategist. My goal is to write a blog post on 'The Benefits of Remote Work for Employee Well-being.' The target audience is HR managers and team leads. Generate 10 potential angles or sub-topics to cover.' This gives us a menu of ideas. Let's say we like the ideas of 'Flexibility and Autonomy,' 'Reduced Commute Stress,' and 'Improved Work-Life Integration.' **Prompt 2: Outlining.** Now we get more specific. 'Using the topics of 'Flexibility,' 'Commute Stress,' and 'Work-Life Integration,' create a detailed, five-part blog post outline. The outline should include an introduction with a hook, three main body sections with 3-4 bullet points each, and a conclusion with a call-to-action.' This prompt gives the AI a clear structure to follow. It will now generate a skeleton for our article. **Prompt 3: Drafting a Section.** Let's flesh out the intro. 'Write a compelling 150-word introduction for this blog post. Start with a surprising statistic about employee burnout. The tone should be empathetic and professional.' We're now using the AI to do targeted writing, not just planning. **Prompt 4: Refining.** Finally, we can ask it to help with titles. 'Generate 5 catchy, SEO-friendly titles for this blog post.' In just four conversational turns, we've gone from a vague idea to having multiple title options, a robust outline, and a fully drafted introduction. This entire process might have taken just five minutes, saving hours of work.",
+                "visualCue": "Show a screen recording or animation of the ChatGPT interface, with each of the four prompts being entered sequentially and the corresponding outputs being generated."
+              },
+              {
+                "timestamp": "44:00",
+                "topic": "The P.A.C.T. Prompt Template",
+                "content": "To make this process even easier, let's formalize a template that builds on our earlier R.T.C.F. framework but is even more memorable and conversational. We'll call it the P.A.C.T. template. P.A.C.T. stands for **Persona, Action, Context, and Tone**. It's a simple fill-in-the-blanks framework you can use for almost any task. **Persona:** 'Act as a [Your chosen expert persona].' This is the same as 'Role.' For example, 'Act as a seasoned project manager.' **Action:** 'Your task is to [The specific verb-led action].' For example, 'Your task is to draft a project kickoff email.' **Context:** 'Here is the necessary context: [Provide all relevant background information].' For example, 'The project is codenamed 'Phoenix.' The goal is to redesign our company website. The deadline for the first draft is next Friday. The team consists of two designers and one developer.' **Tone:** 'The desired tone is [Adjectives describing the tone].' For example, 'The desired tone is motivational, clear, and concise.' Putting it all together gives you a complete, well-structured prompt every time. You can even save this as a text snippet and reuse it constantly. This simple template ensures you never forget to provide the AI with the critical information it needs to deliver a high-quality response. It's your pre-flight checklist for every prompt.",
+                "visualCue": "Display the P.A.C.T. template visually, with each letter expanding to reveal its meaning and a blank space for the user to fill in. P -> Persona, A -> Action, C -> Context, T -> Tone."
+              },
+              {
+                "timestamp": "48:00",
+                "topic": "Customization Tips for Different Roles",
+                "content": "The beauty of the P.A.C.T. template is its versatility. Let's see how different professionals can adapt it. A **Software Developer** might use it like this: **Persona:** 'Act as a senior Python developer specializing in data analysis.' **Action:** 'Your task is to write a Python script that reads a CSV file and calculates the average of the 'Sales' column.' **Context:** 'The CSV file is named 'sales_data.csv' and has columns 'Date,' 'Product_ID,' and 'Sales.' The script should handle potential missing values in the 'Sales' column by ignoring them.' **Tone:** 'The code should be well-commented and follow PEP 8 standards.' A **Salesperson** could adapt it for a different purpose: **Persona:** 'Act as a top-performing B2B sales executive.' **Action:** 'Your task is to write a follow-up email to a potential client after a product demo.' **Context:** 'The client is named Jane Doe from Acme Corp. She was most interested in our analytics dashboard but was concerned about the integration timeline. I promised to send her a case study.' **Tone:** 'The desired tone is confident, helpful, and not pushy.' As you can see, the same simple structure can be applied to vastly different domains, from writing code to crafting sales emails. The key is to be specific in each of the four sections. The more tailored your Persona, Action, Context, and Tone are to your specific need, the more powerful your results will be.",
+                "visualCue": "Show a split screen or a carousel of slides, each showing the P.A.C.T. template filled out for a different professional role (Developer, Salesperson, HR Manager, etc.)."
+              }
+            ],
+            "summary": "In this section, we put everything into practice. We walked through a multi-step project to create a blog post outline, and I introduced you to the reusable P.A.C.T. template—Persona, Action, Context, and Tone. This framework is your key to consistently getting great results.",
+            "callToAction": "You now have the knowledge and the tools. The final step is to consolidate what we've learned. In our next section, we'll summarize the key takeaways and provide a cheat sheet for you to download."
+          },
+          "slides": [
+            {
+              "slideNumber": 22,
+              "title": "Putting It All Together",
+              "content": [
+                "From theory to practical application",
+                "Walkthrough: A complete AI-powered project",
+                "Introducing a reusable prompt template"
+              ],
+              "speakerNotes": "Set the stage for a practical, hands-on section that combines all previous lessons.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 23,
+              "title": "Project: Blog Post Creation",
+              "content": [
+                "Step 1: Brainstorm angles and ideas",
+                "Step 2: Generate a detailed outline",
+                "Step 3: Draft a compelling introduction",
+                "Step 4: Create catchy, SEO-friendly titles"
+              ],
+              "speakerNotes": "Break down the project into clear, sequential steps to make it easy to follow.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 24,
+              "title": "The P.A.C.T. Prompt Template",
+              "content": [
+                "PERSONA: Act as a...",
+                "ACTION: Your task is to...",
+                "CONTEXT: Here is the situation...",
+                "TONE: The desired tone is..."
+              ],
+              "speakerNotes": "Introduce the memorable P.A.C.T. acronym as a key takeaway and reusable tool.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 25,
+              "title": "Customizing P.A.C.T. for Your Role",
+              "content": [
+                "For Developers: 'Act as a senior Python dev...'",
+                "For Sales: 'Act as a top B2B exec...'",
+                "For HR: 'Act as an experienced recruiter...'",
+                "The framework is universally applicable"
+              ],
+              "speakerNotes": "Show the versatility of the template with concrete examples from different professions.",
+              "visualType": "comparison"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "title": "Summary & Next Steps",
+      "objective": "Consolidate all key learnings from the course into a quick-reference cheat sheet and identify pathways for continued learning.",
+      "lectures": [
+        {
+          "lectureNumber": 7,
+          "title": "Your AI Toolkit and Cheat Sheet",
+          "duration": 5,
+          "type": "video",
+          "learningObjective": "Recall the main concepts of the course and know where to find additional resources for further study.",
+          "script": {
+            "opening": "We have covered a tremendous amount of ground in a very short time. You've gone from a basic understanding to possessing a structured, professional approach to using ChatGPT. Now, let's lock in that knowledge by summarizing the most critical takeaways and giving you a handy cheat sheet you can refer to anytime.",
+            "mainContent": [
+              {
+                "timestamp": "51:30",
+                "topic": "Key Takeaways",
+                "content": "If you remember nothing else from this course, remember these key points. First, the quality of your prompt dictates the quality of your output. 'Garbage In, Garbage Out' is the golden rule. Second, every great prompt has four components, which you can remember with our P.A.C.T. template: Persona, Action, Context, and Tone. Using this structure will instantly improve your results. Third, for complex tasks, use advanced techniques. Use Few-Shot prompting with examples to teach specific formats, and use Chain-of-Thought prompting by asking the AI to 'think step-by-step' to improve its reasoning. Fourth, never trust, always verify. Be constantly aware of the limitations like hallucinations and bias. Use the V.E.R.I.F.Y. checklist to validate any critical information. Fifth, protect your data. Never input sensitive or proprietary information into public AI tools. And finally, remember that ChatGPT is your co-pilot, not an autopilot. It's a tool to augment your intelligence, not replace it. You are always in command.",
+                "visualCue": "Show a summary slide with 5-7 key takeaway points, each with a simple icon."
+              },
+              {
+                "timestamp": "53:00",
+                "topic": "Quick Reference Review: The P.A.C.T. Framework",
+                "content": "Let's quickly review the most valuable tool we've developed: the P.A.C.T. framework. This is your go-to template for any request. P is for Persona: 'Act as an expert...' This sets the stage and defines the AI's voice and knowledge base. A is for Action: 'Your task is to...' This is your direct, verb-led command. C is for Context: 'Here is the background...' This is where you provide all the necessary details for a tailored response. And T is for Tone: 'The tone should be...' This controls the emotional and stylistic flavor of the output. You can find this framework detailed in the downloadable cheat sheet attached to this lecture. Print it out, put it by your monitor, and make it a habit. Using it every single time is the fastest way to become a true power user.",
+                "visualCue": "Show a full-screen graphic of the P.A.C.T. template, clearly laid out. This is the 'cheat sheet' visual."
+              },
+              {
+                "timestamp": "55:00",
+                "topic": "Additional Resources",
+                "content": "This course is your starting point, but the learning journey in AI is ongoing. If you're eager to learn more, here are a few excellent resources. First, go directly to the source: OpenAI's official website and documentation. They often post updates, usage policies, and examples. Second, for more advanced prompt engineering, I recommend exploring resources like the 'Prompt Engineering Guide' website, which is a community-driven guide with lots of examples. Finally, for a broader understanding of AI's impact, consider reading books by authors like Kai-Fu Lee or Erik Brynjolfsson, who provide great context on how this technology is shaping our world. The key is to stay curious and keep experimenting. The field is evolving rapidly, so continuous learning is essential.",
+                "visualCue": "Show a slide with logos or titles of the recommended resources: OpenAI logo, a generic book cover, and a website icon."
+              }
+            ],
+            "summary": "In this summary, we reinforced the core principles: the importance of prompts, the P.A.C.T. framework, advanced techniques, and responsible use. Your downloadable cheat sheet contains everything you need to get started.",
+            "callToAction": "Now, it's time to test your knowledge. In the next section, we'll go over the final assessment. Let's make sure these concepts have stuck."
+          },
+          "slides": [
+            {
+              "slideNumber": 26,
+              "title": "Course Summary: Key Takeaways",
+              "content": [
+                "Prompt Quality is Everything",
+                "Use the P.A.C.T. Framework",
+                "Leverage Advanced Techniques",
+                "Never Trust, Always V.E.R.I.F.Y.",
+                "You are the Pilot, AI is the Co-Pilot"
+              ],
+              "speakerNotes": "Provide a concise, powerful summary of the most important, memorable points from the entire course.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 27,
+              "title": "Your Quick Reference Cheat Sheet",
+              "content": [
+                "PERSONA: Who is the AI?",
+                "ACTION: What should it do?",
+                "CONTEXT: What does it need to know?",
+                "TONE: How should it sound?"
+              ],
+              "speakerNotes": "Reinforce the P.A.C.T. framework one last time as the primary tool for students to take away.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 28,
+              "title": "Continue Your Learning",
+              "content": [
+                "Official OpenAI Documentation",
+                "Prompt Engineering Guide (Website)",
+                "Books on AI's societal impact"
+              ],
+              "speakerNotes": "Provide credible and useful next steps for students who want to continue their learning journey.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 8,
+      "title": "Final Assessment",
+      "objective": "Test and confirm your understanding of the fundamental concepts of ChatGPT and effective prompting.",
+      "lectures": [
+        {
+          "lectureNumber": 8,
+          "title": "Test Your Knowledge",
+          "duration": 2,
+          "type": "video",
+          "learningObjective": "Prepare to take the final quiz by understanding its structure and the key concepts being tested.",
+          "script": {
+            "opening": "You've done the work, you've seen the examples, and you have the framework. Now it's time to put your new knowledge to the test. The final assessment is designed to reinforce what you've learned and give you confidence in your new skills.",
+            "mainContent": [
+              {
+                "timestamp": "56:30",
+                "topic": "Quiz Overview",
+                "content": "The final quiz consists of 15 questions. It's a mix of formats to test your knowledge in different ways. You'll see multiple-choice questions that check your understanding of key terms and concepts. There will be a few true or false questions to test core principles. And finally, there will be a couple of scenario-based questions where you'll need to apply what you've learned to a real-world situation, such as identifying the best prompt among several options. The quiz covers all the major topics from the course, from the definition of ChatGPT to the P.A.C.T. framework and the V.E.R.I.F.Y. checklist. There's no time limit, so take your time and read each question carefully.",
+                "visualCue": "Show a simple graphic illustrating the quiz composition: icons for MCQ, T/F, and Scenario questions with numbers next to them."
+              },
+              {
+                "timestamp": "57:00",
+                "topic": "Tips for Success",
+                "content": "To ensure you do well, here are a couple of quick tips. First, take a moment to review the downloadable cheat sheet. It contains a condensed summary of all the key concepts, especially the P.A.C.T. and V.E.R.I.F.Y. frameworks, which will definitely be on the quiz. Second, think back to the examples we used in the course—the marketing copy, the project manager's report, and the researcher's dilemma. These practical stories are often the best way to remember the concepts. Don't just try to recall definitions; think about how the principles are applied. Good luck, and I'm confident you'll do great.",
+                "visualCue": "Show a slide with two icons: one of the cheat sheet document and one of a lightbulb with the word 'Examples' next to it."
+              }
+            ],
+            "summary": "The quiz has 15 questions covering all course topics. Review the cheat sheet and our practical examples before you begin.",
+            "callToAction": "When you're ready, proceed to the final quiz. I'll see you on the other side to congratulate you."
+          },
+          "slides": [
+            {
+              "slideNumber": 29,
+              "title": "Final Assessment",
+              "content": [
+                "Reinforce your learning",
+                "Build confidence in your new skills",
+                "15 questions covering all core concepts"
+              ],
+              "speakerNotes": "Briefly introduce the purpose and structure of the final quiz.",
+              "visualType": "title"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 9,
+      "title": "Conclusion",
+      "objective": "Celebrate course completion and understand the next steps to continue developing AI skills.",
+      "lectures": [
+        {
+          "lectureNumber": 9,
+          "title": "Congratulations and Next Steps",
+          "duration": 2,
+          "type": "video",
+          "learningObjective": "Feel a sense of accomplishment and be motivated to continue learning and apply the new skills.",
+          "script": {
+            "opening": "Congratulations! You have successfully completed the 'Understanding ChatGPT Fundamentals' course. You've taken a significant step in future-proofing your career and enhancing your professional toolkit. You should be incredibly proud of this accomplishment.",
+            "mainContent": [
+              {
+                "timestamp": "58:30",
+                "topic": "Your Accomplishment and Next Steps",
+                "content": "In just one hour, you have built a solid foundation in one of the most transformative technologies of our time. You know what ChatGPT is, how to instruct it effectively using the P.A.C.T. framework, how to apply advanced techniques, and most importantly, how to use it responsibly and ethically. This is a skill set that will pay dividends in your productivity and creativity immediately. So, what's next? The best way to solidify your learning is to apply it. Make a commitment to use ChatGPT for one small task each day this week. Use the P.A.C.T. template. See how it feels. Experiment. If you're looking to go deeper, consider exploring courses on advanced prompt engineering, or if you're technically inclined, look into how the OpenAI API can be used to build applications.",
+                "visualCue": "Show a certificate of completion graphic with the student's name placeholder."
+              },
+              {
+                "timestamp": "59:30",
+                "topic": "Call to Action",
+                "content": "Thank you for joining me on this journey. Your time and attention are valuable, and I hope this course has delivered immense value in return. If you found this course helpful, please consider leaving a review. Your feedback helps other students discover the course and helps me improve my teaching. Share your certificate of completion on social media to celebrate your new skill. Thank you again, and I wish you the very best in applying your new AI co-pilot to achieve amazing things.",
+                "visualCue": "Show a final slide with a thank you message and a call to action to leave a review."
+              }
+            ],
+            "summary": "Congratulations on finishing the course! Apply your skills daily, and if you found value, please leave a review.",
+            "callToAction": "Thank you, and best of luck!"
+          },
+          "slides": [
+            {
+              "slideNumber": 30,
+              "title": "Congratulations!",
+              "content": [
+                "You have mastered the fundamentals",
+                "You are ready to use AI effectively",
+                "Apply your skills starting today",
+                "Thank you and please leave a review!"
+              ],
+              "speakerNotes": "End on a high note, congratulating the student and providing a clear call to action.",
+              "visualType": "title"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "finalQuiz": {
+      "title": "Final Assessment",
+      "passingScore": 70,
+      "questions": [
+        {
+          "questionNumber": 1,
+          "question": "What is the 'T' in ChatGPT an acronym for?",
+          "type": "mcq",
+          "options": [
+            "A) Transformer",
+            "B) Turing",
+            "C) Training",
+            "D) Text"
+          ],
+          "correctAnswer": "A",
+          "explanation": "The 'T' stands for Transformer, which is a neural network architecture introduced in 2017. This architecture is highly effective at understanding context in sequential data like text, which was a major breakthrough for language models.",
+          "difficulty": "easy",
+          "conceptTested": "Foundation"
+        },
+        {
+          "questionNumber": 2,
+          "question": "What is the primary purpose of assigning a 'Role' or 'Persona' in a prompt?",
+          "type": "mcq",
+          "options": [
+            "A) To confuse the AI",
+            "B) To make the prompt longer",
+            "C) To prime the AI to adopt a specific tone, vocabulary, and knowledge base",
+            "D) To test the AI's memory"
+          ],
+          "correctAnswer": "C",
+          "explanation": "Assigning a role (e.g., 'Act as an expert copywriter') helps the model narrow its focus. It primes the AI to access the patterns, language, and stylistic conventions associated with that role from its training data, leading to a more relevant and higher-quality response.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 1"
+        },
+        {
+          "questionNumber": 3,
+          "question": "The term for when an AI model confidently states false information is known as:",
+          "type": "mcq",
+          "options": [
+            "A) Bug",
+            "B) Glitch",
+            "C) Hallucination",
+            "D) Feature"
+          ],
+          "correctAnswer": "C",
+          "explanation": "A 'hallucination' is the correct term for when an AI generates text that is factually incorrect, nonsensical, or disconnected from reality, but presents it as if it were true. This is a key limitation to be aware of.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 3"
+        },
+        {
+          "questionNumber": 4,
+          "question": "Which prompting technique involves providing several input-output examples to the AI before giving the actual task?",
+          "type": "mcq",
+          "options": [
+            "A) Zero-Shot Prompting",
+            "B) Chain-of-Thought Prompting",
+            "C) Role-Playing Prompting",
+            "D) Few-Shot Prompting"
+          ],
+          "correctAnswer": "D",
+          "explanation": "Few-Shot Prompting is the technique of showing the model a few examples of the task you want it to perform. This helps the AI understand the desired pattern and format, leading to more accurate and structured outputs.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 2"
+        },
+        {
+          "questionNumber": 5,
+          "question": "According to the P.A.C.T. framework, which component provides the 'why' and background details for your request?",
+          "type": "mcq",
+          "options": [
+            "A) Persona",
+            "B) Action",
+            "C) Context",
+            "D) Tone"
+          ],
+          "correctAnswer": "C",
+          "explanation": "The 'Context' component is where you provide all the necessary background information, such as the target audience, goals, constraints, and any other details the AI needs to produce a tailored and relevant response.",
+          "difficulty": "easy",
+          "conceptTested": "Practical Application"
+        },
+        {
+          "questionNumber": 6,
+          "question": "What is the primary benefit of using 'Chain-of-Thought' prompting?",
+          "type": "mcq",
+          "options": [
+            "A) It makes the AI's response shorter.",
+            "B) It improves the AI's ability to reason through multi-step problems.",
+            "C) It guarantees a factually correct answer.",
+            "D) It forces the AI to use a specific persona."
+          ],
+          "correctAnswer": "B",
+          "explanation": "By asking the AI to 'think step-by-step,' Chain-of-Thought prompting forces the model to break down a problem and show its work. This externalized reasoning process significantly increases the chances of arriving at a correct or logical conclusion for complex tasks.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 2"
+        },
+        {
+          "questionNumber": 7,
+          "question": "Which of the following is a recommended best practice for responsible AI use?",
+          "type": "mcq",
+          "options": [
+            "A) Trusting the first output as the final version.",
+            "B) Inputting sensitive company financial data to get accurate analysis.",
+            "C) Using the AI as a co-pilot with human oversight.",
+            "D) Assuming all statistics provided by the AI are accurate."
+          ],
+          "correctAnswer": "C",
+          "explanation": "The 'co-pilot, not autopilot' principle is crucial. Responsible AI use requires maintaining human oversight to review, edit, and validate the AI's output, ensuring accuracy and alignment with goals. The other options represent risky or incorrect practices.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3"
+        },
+        {
+          "questionNumber": 8,
+          "question": "The 2017 research paper 'Attention Is All You Need' was significant because it introduced the:",
+          "type": "mcq",
+          "options": [
+            "A) Concept of the Turing Test",
+            "B) First chatbot, ELIZA",
+            "C) Transformer architecture",
+            "D) Python programming language"
+          ],
+          "correctAnswer": "C",
+          "explanation": "This paper from Google researchers introduced the Transformer architecture, which was a breakthrough in how models could handle context and dependencies in language. It is the foundational technology behind the GPT series of models.",
+          "difficulty": "hard",
+          "conceptTested": "Foundation"
+        },
+        {
+          "questionNumber": 9,
+          "question": "In the V.E.R.I.F.Y. checklist, what does the 'F' stand for?",
+          "type": "mcq",
+          "options": [
+            "A) Find more examples",
+            "B) Forbid Your sensitive data",
+            "C) Format the output",
+            "D) Follow up with questions"
+          ],
+          "correctAnswer": "B",
+          "explanation": "The 'F' in V.E.R.I.F.Y. stands for 'Forbid Your sensitive data.' This is a critical reminder about data privacy and security—never input personal, proprietary, or confidential information into a public AI tool.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3"
+        },
+        {
+          "questionNumber": 10,
+          "question": "Which of the following is the LEAST effective prompt?",
+          "type": "mcq",
+          "options": [
+            "A) 'Act as a travel agent. Create a 3-day itinerary for a trip to Paris focused on art museums. The budget is $150 per day.'",
+            "B) 'Tell me about Rome.'",
+            "C) 'Summarize the provided article into five bullet points for a busy executive.'",
+            "D) 'Translate the phrase 'Hello, how are you?' into Spanish.'"
+          ],
+          "correctAnswer": "B",
+          "explanation": "The prompt 'Tell me about Rome' is extremely vague. It lacks a clear task, context, persona, or format. The other options are all specific and provide the AI with enough information to generate a useful response.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 1"
+        },
+        {
+          "questionNumber": 11,
+          "question": "It is safe to input confidential employee performance reviews into ChatGPT to ask for a summary.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B",
+          "explanation": "False. You should never input sensitive, confidential, or proprietary information into public AI tools. There are significant privacy and security risks, as this data could potentially be used for training or be exposed.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 3"
+        },
+        {
+          "questionNumber": 12,
+          "question": "The P.A.C.T. framework is an acronym for Persona, Action, Context, and Tone.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "A",
+          "explanation": "True. The P.A.C.T. framework is a reusable template for creating effective prompts by defining the Persona (who the AI is), the Action (what it should do), the Context (background info), and the Tone (how it should sound).",
+          "difficulty": "easy",
+          "conceptTested": "Practical Application"
+        },
+        {
+          "questionNumber": 13,
+          "question": "ChatGPT's knowledge is always up-to-date with events that happened yesterday.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B",
+          "explanation": "False. Language models like ChatGPT are 'pre-trained' on a dataset up to a specific point in time, known as the 'knowledge cutoff.' They do not have real-time access to the internet and are unaware of very recent events.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3"
+        },
+        {
+          "questionNumber": 14,
+          "question": "A marketing manager wants to create an email campaign for a new product. Which of the following prompts is most likely to produce the best result?",
+          "type": "scenario",
+          "options": [
+            "A) 'Write a marketing email.'",
+            "B) 'Write a marketing email for our new productivity app, 'FocusFlow'.'",
+            "C) 'Act as an expert email marketer. Write a 3-part email drip campaign to launch our new app, 'FocusFlow'. The target audience is freelance creatives who struggle with time management. The tone should be inspiring and empathetic. The goal is to get them to sign up for a free trial.'",
+            "D) 'Our new app is called 'FocusFlow'. Please create some marketing content for it, like an email.'"
+          ],
+          "correctAnswer": "C",
+          "explanation": "Option C is the strongest prompt because it effectively uses all elements of the P.A.C.T. framework. It defines a Persona (expert email marketer), a clear Action (write a 3-part campaign), rich Context (app name, target audience, their pain points, campaign goal), and a specific Tone (inspiring and empathetic). The other options are too vague.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 1"
+        },
+        {
+          "questionNumber": 15,
+          "question": "A user asks ChatGPT for the current world record for the 100-meter dash and it provides a name and a time. What is the most responsible next step for the user?",
+          "type": "scenario",
+          "options": [
+            "A) Immediately use the information in a report, as ChatGPT is generally accurate.",
+            "B) Ask ChatGPT to double-check its own answer.",
+            "C) Assume the information is a hallucination and ignore it.",
+            "D) Independently verify the name and time using a reliable external source like the official World Athletics website."
+          ],
+          "correctAnswer": "D",
+          "explanation": "This scenario tests the 'Never Trust, Always Verify' principle. The most responsible action is to treat the AI's output as unverified and cross-check the specific fact (a world record) with an authoritative, independent source. Asking the AI to check itself is unreliable, and simply assuming it's wrong or right are both poor practices.",
+          "difficulty": "hard",
+          "conceptTested": "Core Concept 3"
+        }
+      ]
+    },
+    "practicalAssignment": {
+      "title": "Project: Draft a Professional Email",
+      "description": "Apply the P.A.C.T. framework to generate a professional email for a common business scenario. This will test your ability to translate a real-world need into an effective prompt.",
+      "requirements": [
+        "Choose a common professional scenario (e.g., requesting a project extension, thanking a colleague for help, or proposing a new idea to your manager).",
+        "Write a single, detailed prompt using the P.A.C.T. (Persona, Action, Context, Tone) framework.",
+        "Generate the email using ChatGPT with your prompt.",
+        "Review the generated email and note one specific way you would edit or refine it using your own expertise."
+      ],
+      "deliverables": [
+        "1. The business scenario you chose (1 sentence).",
+        "2. The complete P.A.C.T. prompt you wrote.",
+        "3. The final email generated by ChatGPT.",
+        "4. A brief note (1-2 sentences) on the refinement you would make."
+      ],
+      "evaluationCriteria": [
+        "Prompt Quality: Does the prompt clearly define a Persona, Action, Context, and Tone?",
+        "Relevance: Is the generated email appropriate for the chosen scenario?",
+        "Critical Thinking: Does the refinement note demonstrate an understanding of human oversight and the 'co-pilot' principle?"
+      ]
+    }
+  },
+  "cheatSheet": {
+    "title": "ChatGPT Fundamentals: Quick Reference Guide",
+    "sections": [
+      {
+        "heading": "Key Definitions",
+        "items": [
+          "Prompt: The instruction you give to the AI.",
+          "LLM (Large Language Model): The underlying technology of ChatGPT, trained on vast text data.",
+          "Hallucination: When the AI confidently states false information.",
+          "Transformer: The breakthrough AI architecture that understands context in text."
+        ]
+      },
+      {
+        "heading": "Core Concept 1: The P.A.C.T. Prompt Framework",
+        "items": [
+          "PERSONA: 'Act as a [expert role]...'",
+          "ACTION: 'Your task is to [perform a clear action]...'",
+          "CONTEXT: 'Here is the background info: [target audience, goals, details]...'",
+          "TONE: 'The desired tone is [adjective, e.g., formal, witty]...'"
+        ]
+      },
+      {
+        "heading": "Core Concept 2: Advanced Techniques",
+        "items": [
+          "Few-Shot Prompting: Provide 2-3 examples of input/output to teach a specific format.",
+          "Chain-of-Thought: Add 'Let's think step-by-step' to improve reasoning on complex problems."
+        ]
+      },
+      {
+        "heading": "Core Concept 3: The V.E.R.I.F.Y. Checklist",
+        "items": [
+          "Validate critical facts with external sources.",
+          "Examine the output for potential bias.",
+          "Reference (and manually check) any sources.",
+          "Inject your own expertise and edit heavily.",
+          "Forbid Your sensitive and proprietary data."
+        ]
+      }
+    ],
+    "doList": [
+      "Be specific and clear in your tasks.",
+      "Provide as much relevant context as possible.",
+      "Iterate on your prompts to refine results.",
+      "Always maintain human oversight and review."
+    ],
+    "dontList": [
+      "Never use vague or ambiguous language.",
+      "Don't trust statistics or facts without verification.",
+      "Never input sensitive or confidential information.",
+      "Don't accept the first draft as the final product."
+    ],
+    "checklist": [
+      "Step 1: Define your goal.",
+      "Step 2: Draft a prompt using the P.A.C.T. framework.",
+      "Step 3: Generate the response.",
+      "Step 4: Apply the V.E.R.I.F.Y. checklist to the output.",
+      "Step 5: Edit and refine with your own expertise."
+    ],
+    "tips": [
+      "Use constraints like 'under 200 words' or 'in a formal tone' to control the output.",
+      "Have a conversation. Use follow-up prompts to tweak the AI's response.",
+      "Save your best prompts in a note-taking app for reuse."
+    ]
+  },
+  "thumbnailSuggestions": [
+    {
+      "concept": "A human brain with glowing digital connections on one side, symbolizing the partnership between human intelligence and AI.",
+      "text": "ChatGPT Fundamentals",
+      "colors": [
+        "#0D1117",
+        "#4A90E2"
+      ],
+      "style": "professional"
+    },
+    {
+      "concept": "A simple, bold graphic of a person sitting at a desk with a 'co-pilot' icon floating beside them, representing AI assistance.",
+      "text": "AI for Professionals",
+      "colors": [
+        "#FFFFFF",
+        "#1A1A1A"
+      ],
+      "style": "minimal"
+    }
+  ],
+  "promotionalContent": {
+    "promoVideo": {
+      "script": "Are you tired of spending hours on tasks that should take minutes? Drafting emails, summarizing reports, brainstorming ideas... it all adds up. But what if you had a brilliant co-pilot to help you do it all, faster and better? Welcome to 'Understanding ChatGPT Fundamentals.' In just 60 minutes, this course will transform you from a curious beginner into a confident, effective user of one of the world's most powerful AI tools. I'll teach you the simple P.A.C.T. framework for writing perfect prompts every time. You'll learn advanced techniques to tackle complex problems and, crucially, you'll learn how to use AI responsibly and avoid common pitfalls like factual errors and bias. This isn't about technical jargon; it's about practical skills you can apply to your job tomorrow. Stop feeling like you're falling behind in the age of AI. Enroll now and learn how to make ChatGPT your professional superpower.",
+      "keyPoints": [
+        "Master ChatGPT in just 60 minutes.",
+        "Learn the powerful P.A.C.T. prompt framework.",
+        "Boost your professional productivity immediately."
+      ]
+    },
+    "welcomeMessage": "Welcome to the course! I'm so excited you're here to start your journey into the world of generative AI. Over the next hour, you'll gain a powerful new skill set that can genuinely transform the way you work. My goal is to make this technology accessible, practical, and immediately useful for you. Please feel free to ask questions in the Q&A section, and don't forget to download the cheat sheet in the final section. Let's get started!"
+  },
+  "_meta": {
+    "courseId": "course-2",
+    "generatedAt": "2026-02-02T12:43:50.409Z",
+    "provider": "gemini-2.5-pro",
+    "attempts": 1
+  }
+}
