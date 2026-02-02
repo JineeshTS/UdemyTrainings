@@ -18,7 +18,7 @@ function initGemini() {
   if (!genAI && API_KEY) {
     genAI = new GoogleGenerativeAI(API_KEY);
     model = genAI.getGenerativeModel({
-      model: 'gemini-2.5-pro-preview-05-06',
+      model: 'gemini-2.5-pro',
       generationConfig: {
         temperature: 0,
         topP: 0.95,

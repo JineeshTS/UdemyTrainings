@@ -31,6 +31,8 @@ async function isChatterboxAvailable() {
  * Generate narration via Chatterbox (OpenAI-compatible API)
  */
 async function generateWithChatterbox(text, outputPath) {
+  const { execSync } = require('child_process');
+
   const res = await fetch(`${CHATTERBOX_URL}/v1/audio/speech`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -38,7 +40,7 @@ async function generateWithChatterbox(text, outputPath) {
       model: 'chatterbox',
       input: text,
       voice: 'reference',
-      response_format: 'mp3'
+      response_format: 'wav'
     })
   });
 
@@ -47,9 +49,20 @@ async function generateWithChatterbox(text, outputPath) {
   const buffer = Buffer.from(await res.arrayBuffer());
   const dir = path.dirname(outputPath);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(outputPath, buffer);
 
-  return { success: true, audioPath: outputPath, fileSize: buffer.length, method: 'chatterbox' };
+  // Server returns WAV — convert to MP3 via ffmpeg
+  const wavPath = outputPath.replace('.mp3', '.wav');
+  fs.writeFileSync(wavPath, buffer);
+  try {
+    execSync(`ffmpeg -y -i "${wavPath}" -codec:a libmp3lame -b:a 192k "${outputPath}"`, { stdio: 'pipe' });
+    fs.unlinkSync(wavPath);
+  } catch {
+    // If ffmpeg fails, keep the WAV as fallback
+    fs.renameSync(wavPath, outputPath);
+  }
+
+  const stats = fs.statSync(outputPath);
+  return { success: true, audioPath: outputPath, fileSize: stats.size, method: 'chatterbox' };
 }
 
 /**

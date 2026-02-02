@@ -118,8 +118,16 @@ function addContentSlide(pptx, slideData) {
   if (slideData.speakerNotes) slide.addNotes(slideData.speakerNotes);
 }
 
-async function generateThumbnail(options) {
-  const { title, text, outputPath, width = 2048, height = 1152 } = options;
+async function generateThumbnail(contentOrOptions, outputDir) {
+  // Support both: generateThumbnail(content, outputDir) and generateThumbnail({title, text, outputPath})
+  let title, text, outputPath, width = 2048, height = 1152;
+  if (outputDir) {
+    title = contentOrOptions.metadata?.title || contentOrOptions.title || 'Course';
+    text = contentOrOptions.metadata?.subtitle || '';
+    outputPath = path.join(outputDir, 'thumbnail.jpg');
+  } else {
+    ({ title, text, outputPath, width = 2048, height = 1152 } = contentOrOptions);
+  }
   console.log('   Generating thumbnail...');
 
   try {

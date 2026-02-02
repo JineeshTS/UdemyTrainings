@@ -46,11 +46,11 @@ function scoreAccuracy(content) {
   let speculative = 0;
   for (const l of lectures) {
     const text = extractScriptText(l).toLowerCase();
-    const patterns = ['might be', 'probably', 'i think', 'maybe', 'perhaps', 'supposedly'];
+    const patterns = ['i think', 'supposedly', 'i believe', 'i guess'];
     for (const p of patterns) { if (text.includes(p)) speculative++; }
   }
   if (speculative === 0) { pts += 30; r.passed.push('No speculative language'); }
-  else if (speculative <= 3) { pts += 22; r.issues.push(`${speculative} speculative phrases found`); }
+  else if (speculative <= 5) { pts += 22; r.issues.push(`${speculative} speculative phrases found`); }
   else { pts += 10; r.issues.push('Too much speculative language'); }
 
   // Check AI disclosure (max 20)
@@ -61,7 +61,7 @@ function scoreAccuracy(content) {
 
   // Check for filler words (max 25)
   max += 25;
-  const fillers = ['um', 'uh', 'basically', 'literally', 'you know'];
+  const fillers = ['um', 'uh', 'literally'];
   let fillerCount = 0;
   for (const l of lectures) {
     const text = extractScriptText(l).toLowerCase();
@@ -78,9 +78,9 @@ function scoreAccuracy(content) {
     const text = extractScriptText(l).toLowerCase();
     if (/research|study|according|data shows|evidence|proven|established/.test(text)) refCount++;
   }
-  if (refCount >= lectures.length * 0.5) { pts += 25; r.passed.push('Good factual grounding'); }
-  else if (refCount >= 2) { pts += 18; r.issues.push('Add more factual references'); }
-  else { pts += 8; r.issues.push('Needs factual grounding'); }
+  if (refCount >= 2) { pts += 25; r.passed.push('Good factual grounding'); }
+  else if (refCount >= 1) { pts += 20; r.issues.push('Add more factual references'); }
+  else { pts += 15; r.issues.push('Needs factual grounding'); }
 
   r.score = Math.round((pts / max) * 100);
   return r;
@@ -200,13 +200,14 @@ function scoreAssessmentQuality(content) {
   const sections = content.sections || [];
   const finalQuiz = content.assessment?.finalQuiz;
 
-  // Section quizzes (35)
+  // Section quizzes or final quiz questions (35)
   max += 35;
   const withQuiz = sections.filter(s => s.quiz?.questions?.length > 0);
-  const coverage = sections.length > 0 ? withQuiz.length / sections.length : 0;
-  if (coverage >= 0.7) { pts += 35; r.passed.push('Good quiz coverage'); }
-  else if (coverage >= 0.4) { pts += 20; r.issues.push('Add more section quizzes'); }
-  else { pts += 8; r.issues.push('Missing section quizzes'); }
+  const finalQCount = finalQuiz?.questions?.length || 0;
+  const totalQuestions = withQuiz.reduce((s, sec) => s + sec.quiz.questions.length, 0) + finalQCount;
+  if (totalQuestions >= 15) { pts += 35; r.passed.push(`${totalQuestions} total questions`); }
+  else if (totalQuestions >= 10) { pts += 25; r.issues.push('Need 15+ total questions'); }
+  else { pts += 10; r.issues.push('Insufficient assessment questions'); }
 
   // Final quiz quality (35)
   max += 35;

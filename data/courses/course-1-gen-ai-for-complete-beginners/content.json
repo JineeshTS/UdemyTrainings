@@ -1,0 +1,1098 @@
+{
+  "metadata": {
+    "title": "Gen AI for Complete Beginners",
+    "subtitle": "Go from zero to hero in 60 minutes. Learn to use Generative AI to boost your productivity and creativity at work.",
+    "description": "Are you hearing about Generative AI everywhere but don't know where to start? This 60-minute micro-course is designed for you. We'll cut through the hype and give you the essential knowledge and practical skills to start using tools like ChatGPT, Midjourney, and others effectively and responsibly. You'll learn the core concepts behind Large Language Models (LLMs), master the art of prompt engineering to get the results you want, and explore how AI can generate not just text, but also images, code, and more. This course is for working professionals in any industry—marketers, project managers, analysts, consultants, and entrepreneurs—who want to leverage this transformative technology to save time, generate new ideas, and gain a competitive edge in their careers. By the end of this course, you will be able to confidently use Generative AI tools for real-world business tasks, from drafting emails and reports to creating marketing copy and brainstorming strategic plans. No prior technical knowledge is required. We will focus on practical application, not complex theory. Join us to demystify AI and turn it into your personal productivity superpower. This course was created with AI assistance to ensure the content is comprehensive, up-to-date, and structured for optimal learning, guided by an expert instructional designer.",
+    "objectives": [
+      "Define Generative AI and differentiate it from traditional AI.",
+      "Understand the fundamental principles of Large Language Models (LLMs).",
+      "Master a 4-part framework for writing effective AI prompts.",
+      "Apply Generative AI to solve common business problems like summarization and content creation.",
+      "Identify different modalities of Generative AI, including text, image, and code generation.",
+      "Recognize common pitfalls and best practices for using AI tools responsibly."
+    ],
+    "prerequisites": [
+      "No prior AI or programming knowledge is required.",
+      "A willingness to learn and experiment with new tools.",
+      "Access to a web browser and an internet connection."
+    ],
+    "targetAudience": [
+      "Professionals seeking to understand and apply AI in their jobs.",
+      "Marketers, writers, and content creators looking to boost creativity.",
+      "Project managers and analysts wanting to automate routine tasks.",
+      "Business leaders and entrepreneurs exploring AI for strategic advantage."
+    ],
+    "keywords": [
+      "Generative AI",
+      "Prompt Engineering",
+      "ChatGPT",
+      "Large Language Models",
+      "LLM",
+      "AI for Business",
+      "Artificial Intelligence",
+      "Beginner AI Course",
+      "Productivity",
+      "AI Tools"
+    ],
+    "category": "GENERATIVE AI & PROMPT ENGINEERING",
+    "level": "Beginner"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "title": "Introduction: Your AI Journey Begins",
+      "objective": "Understand the course structure, learning outcomes, and the real-world importance of Generative AI.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Welcome to the AI Revolution",
+          "duration": 3,
+          "type": "video",
+          "learningObjective": "Grasp the significance of Generative AI and what you will achieve in this course.",
+          "script": {
+            "opening": "Have you ever felt like you're struggling to keep up with the pace of work? What if you had an assistant who could draft emails, summarize reports, and brainstorm ideas in seconds? That's not science fiction anymore; it's the reality of Generative AI. In fact, many professionals are already using these tools to significantly boost their productivity. The question is, are you ready to join them? In the next 60 minutes, I'll show you exactly how.",
+            "mainContent": [
+              {
+                "timestamp": "0:30",
+                "topic": "What You Will Learn",
+                "content": "Welcome to 'Gen AI for Complete Beginners.' I'm thrilled to be your guide. Over the next hour, we're going to demystify this powerful technology together. First, you will learn what Generative AI actually is, cutting through the jargon to understand the core concepts in simple, clear terms. We'll explore how it's different from the AI you might already be familiar with. Second, you will master the single most important skill for using AI effectively: prompt engineering. I'll give you a simple yet powerful framework to write instructions that get you the exact results you need, every single time. Finally, you will discover how to apply these skills to real-world tasks. We'll move beyond theory and work through practical examples that you can immediately use in your day-to-day job, whether you're in marketing, finance, or operations. You'll leave this course not just knowing about AI, but knowing how to use it.",
+                "visualCue": "Show a slide with the three key learning outcomes clearly listed."
+              },
+              {
+                "timestamp": "1:30",
+                "topic": "Why This Matters Now",
+                "content": "So, why is this so important right now? Generative AI is not just another tech trend; it's a fundamental shift in how we work, similar to the internet or the smartphone. Companies across every industry are adopting these tools to innovate faster, streamline processes, and make better decisions. Learning to use AI is quickly becoming a core professional competency, just like using email or a spreadsheet. By investing just one hour today, you are future-proofing your skills. You'll be able to work smarter, not harder, freeing up your time to focus on strategic, creative, and high-impact tasks that truly matter. This isn't about replacing people; it's about augmenting your abilities. This course is your first step towards becoming an AI-empowered professional, ready to thrive in the new world of work. Let's get started.",
+                "visualCue": "Show icons representing different industries (healthcare, finance, creative arts) with an AI brain icon connecting them, symbolizing its broad impact."
+              }
+            ],
+            "summary": "In this introduction, we've set the stage. You now know that this course will equip you with a clear understanding of Gen AI, the skill of prompt engineering, and practical applications for your job.",
+            "callToAction": "In the next lecture, we'll build our foundation by defining exactly what Generative AI is and how it evolved. Let's dive in."
+          },
+          "slides": [
+            {
+              "slideNumber": 1,
+              "title": "Gen AI for Complete Beginners",
+              "content": [
+                "Go from Zero to Hero in 60 Minutes"
+              ],
+              "speakerNotes": "Welcome slide with the course title.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 2,
+              "title": "What if you had a superpower?",
+              "content": [
+                "Draft emails in seconds",
+                "Summarize long reports instantly",
+                "Brainstorm endless creative ideas"
+              ],
+              "speakerNotes": "This is the hook. Relate AI to a superpower for work.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 3,
+              "title": "What You Will Learn",
+              "content": [
+                "Understand Core AI Concepts",
+                "Master Prompt Engineering",
+                "Apply AI to Real-World Tasks"
+              ],
+              "speakerNotes": "Outline the key takeaways for the student.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 4,
+              "title": "Why This Matters Now",
+              "content": [
+                "A fundamental shift in work",
+                "A core professional competency",
+                "Augment your human abilities"
+              ],
+              "speakerNotes": "Explain the urgency and relevance of learning this skill.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "title": "The Foundation: What is Generative AI?",
+      "objective": "Define Generative AI, distinguish it from traditional AI, and understand its historical context.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Defining the Digital Brain",
+          "duration": 4,
+          "type": "video",
+          "learningObjective": "Articulate the definition of Generative AI and its key historical milestones.",
+          "script": {
+            "opening": "You've probably interacted with AI for years without even thinking about it—like when your phone suggests the rest of a word you're typing, or a streaming service recommends a movie. But that's not Generative AI. So what's the difference? Why is one causing such a massive global conversation? The difference lies in a single, powerful word: 'create'. Let's break down exactly what that means and how we got here.",
+            "mainContent": [
+              {
+                "timestamp": "3:00",
+                "topic": "Definition & Context",
+                "content": "At its core, Generative AI is a type of artificial intelligence that can create new, original content. This content can be text, images, music, code, or even video. Think of traditional AI, also called discriminative AI, as a classifier. It's designed to analyze existing data and make a prediction or a decision. For example, it can look at an image and tell you if it's a cat or a dog. It 'discriminates' between known categories. Generative AI, on the other hand, is a creator. You don't ask it 'Is this a cat?'; you ask it to 'Create a picture of a cat wearing a spacesuit.' It learns patterns and structures from vast amounts of training data—like the entire internet—and then uses that knowledge to generate something entirely new that fits those patterns. This ability to generate, not just analyze, is the key revolution.",
+                "visualCue": "Show a comparison slide. Left side: 'Traditional AI' with an icon of a checklist or a magnifying glass. Right side: 'Generative AI' with an icon of a paintbrush or a lightbulb."
+              },
+              {
+                "timestamp": "5:00",
+                "topic": "A Brief History of Generation",
+                "content": "While it feels like Generative AI appeared overnight, its roots go back decades. Early experiments in the mid-20th century involved rule-based systems that were very limited. The real breakthroughs are much more recent. A major milestone was the development of Generative Adversarial Networks, or GANs, in 2014, which dramatically improved the quality of AI-generated images. But the seismic shift for text generation came in 2017 with Google's invention of the 'Transformer' architecture. This new model design was incredibly effective at understanding context and relationships in language. This technology paved the way for the Large Language Models, or LLMs, that power the tools we use today, like OpenAI's GPT series. Each new model has grown exponentially more powerful, trained on more data, leading to the sophisticated, creative, and surprisingly coherent AI assistants we can now access.",
+                "visualCue": "Show a simple timeline graphic with key dates: 2014 (GANs), 2017 (Transformer Architecture), and 2020-Present (Rise of LLMs like GPT)."
+              }
+            ],
+            "summary": "So, to recap: Traditional AI analyzes and classifies, while Generative AI creates new content. This leap was made possible by key innovations like the Transformer architecture, which powers today's powerful LLMs.",
+            "callToAction": "Now that we know what it is, our next step is to look inside the 'brain' itself. In the next lecture, we'll explore our first core concept: Large Language Models."
+          },
+          "slides": [
+            {
+              "slideNumber": 5,
+              "title": "AI: Analyze vs. Create",
+              "content": [
+                "What's the key difference?"
+              ],
+              "speakerNotes": "Hook slide to introduce the core distinction.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 6,
+              "title": "Traditional AI vs. Generative AI",
+              "content": [
+                "Traditional AI: Analyzes & Predicts",
+                "Is this a cat or a dog?",
+                "Generative AI: Creates & Generates",
+                "Draw a cat wearing a spacesuit."
+              ],
+              "speakerNotes": "Use this slide to explain the fundamental difference.",
+              "visualType": "comparison"
+            },
+            {
+              "slideNumber": 7,
+              "title": "Key Historical Milestones",
+              "content": [
+                "2014: Generative Adversarial Networks (GANs)",
+                "2017: The 'Transformer' Architecture",
+                "2020+: Rise of Large Language Models (LLMs)"
+              ],
+              "speakerNotes": "Briefly touch on the key technological advancements.",
+              "visualType": "diagram"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "title": "Core Concept 1: Large Language Models (LLMs)",
+      "objective": "Understand what Large Language Models are, how they work, and how to apply them to a business context.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Inside the Mind of AI",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Explain the function of LLMs and identify common mistakes when using them.",
+          "script": {
+            "opening": "Have you ever wondered how a tool like ChatGPT can write a poem, answer a complex question, or even debug code? It seems like magic, but it's not. It's the power of a Large Language Model, or LLM. Think of it as an incredibly advanced prediction engine. Let's pull back the curtain and see how it really works, in simple terms.",
+            "mainContent": [
+              {
+                "timestamp": "7:00",
+                "topic": "Concept Explanation: What is an LLM?",
+                "content": "A Large Language Model is a massive neural network—a type of AI inspired by the human brain—that has been trained on an enormous dataset of text and code. We're talking about a significant portion of the public internet: books, articles, websites, and more. Through this training, the LLM doesn't 'understand' language in the human sense. Instead, it learns statistical patterns, grammar, context, facts, and even reasoning styles. Its fundamental job is to predict the next most likely word in a sequence. When you give it a prompt, like 'The first person on the moon was...', it calculates the most probable next word is 'Neil,' then given that, the next most probable is 'Armstrong.' By stringing these predictions together one word at a time, it generates coherent and contextually relevant sentences, paragraphs, and entire documents. The 'Large' in LLM refers to both the immense size of the model (billions of parameters) and the colossal amount of data it was trained on.",
+                "visualCue": "Show a simple diagram: [Vast Data (Books, Web)] -> [Training Process] -> [LLM (Neural Network)] -> [Predicts Next Word]."
+              },
+              {
+                "timestamp": "9:00",
+                "topic": "Step-by-Step Breakdown: How an LLM Responds",
+                "content": "Let's walk through what happens when you hit 'Enter' on a prompt. Step 1: Input and Tokenization. Your prompt, 'Summarize this article for me,' is broken down into smaller pieces called tokens. Tokens can be words, parts of words, or punctuation. Step 2: Embedding. Each token is converted into a numerical representation, a vector, that captures its meaning and relationship to other words. This is how the model understands context. Step 3: The Transformer. These numbers are processed through the many layers of the transformer architecture. This is where the magic happens. The model pays 'attention' to different parts of your input, weighing which tokens are most important to generate a relevant response. Step 4: Prediction and Generation. The model predicts the most likely next token. That token is added to the sequence, and the process repeats. It predicts the next token, then the next, and so on, generating the response word by word until it determines the answer is complete. It's a sophisticated, high-speed prediction loop.",
+                "visualCue": "An animated flowchart showing the 4 steps: 1. Prompt -> 2. Tokens -> 3. Transformer Layers -> 4. Generated Text."
+              },
+              {
+                "timestamp": "12:00",
+                "topic": "Example 1: Summarizing a Business Report",
+                "content": "Let's make this practical. Imagine you're a project manager and you've just been sent a 20-page quarterly performance report. You need the key insights, fast. Instead of spending an hour reading it, you can use an LLM. You would copy the text of the report and use a prompt like: 'You are a senior business analyst. Read the following report and provide a 5-bullet point summary of the key findings, including major achievements, challenges, and the financial outlook.' The LLM will process the entire text, identify the main themes based on the patterns it learned, and generate a concise, structured summary for you. This turns an hour of work into a few minutes. This is a perfect use case, leveraging the LLM's strength in processing and synthesizing large amounts of text.",
+                "visualCue": "Show a split screen. Left: A long, dense block of text representing a report. Right: A clean, 5-bullet point summary generated by an AI."
+              },
+              {
+                "timestamp": "15:00",
+                "topic": "Common Mistakes to Avoid",
+                "content": "Using LLMs effectively requires avoiding a few common traps. The first mistake is being too vague. A prompt like 'write about marketing' is useless. The model doesn't know what you want. You need to be specific. The second, and most critical, mistake is 'hallucination' or blind trust. LLMs can confidently make up facts, statistics, or sources because their goal is to generate plausible-sounding text, not to be factually accurate. You must always, always verify any critical information, like data, names, or dates, that an LLM provides. Think of it as a brilliant but sometimes unreliable intern. Finally, don't input sensitive or confidential information. Most public AI tools use your data for training unless you use a specific business or enterprise version with data privacy controls. Always be mindful of data security.",
+                "visualCue": "Show a slide with three icons: A question mark for 'Vague Prompts', a ghost for 'Hallucinations', and a lock for 'Data Privacy'."
+              }
+            ],
+            "summary": "We've learned that LLMs are powerful prediction engines trained on vast data. They work by tokenizing input and predicting the next word in a sequence. This is great for tasks like summarization, but be careful of vague prompts, hallucinations, and data privacy.",
+            "callToAction": "Now that you understand the engine, it's time to learn how to drive it. In our next section, we'll dive into the art and science of prompt engineering."
+          },
+          "slides": [
+            {
+              "slideNumber": 8,
+              "title": "What is a Large Language Model (LLM)?",
+              "content": [
+                "A massive neural network",
+                "Trained on vast amounts of text",
+                "Predicts the next word in a sequence"
+              ],
+              "speakerNotes": "Start with a simple, clear definition of an LLM.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 9,
+              "title": "How an LLM Responds",
+              "content": [
+                "1. Input & Tokenization",
+                "2. Embedding (Converts to numbers)",
+                "3. Transformer (Processes context)",
+                "4. Prediction & Generation"
+              ],
+              "speakerNotes": "Walk through the four main steps of how an LLM generates a response.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 10,
+              "title": "Real-World Example: Report Summary",
+              "content": [
+                "Input: 20-page performance report",
+                "Prompt: 'Summarize key findings in 5 bullets'",
+                "Output: Concise, actionable insights"
+              ],
+              "speakerNotes": "Provide a concrete business example of using an LLM.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 11,
+              "title": "Common Mistakes to Avoid",
+              "content": [
+                "Vague or ambiguous prompts",
+                "Blindly trusting the output (Hallucinations)",
+                "Inputting sensitive or private data"
+              ],
+              "speakerNotes": "Highlight the most critical pitfalls for beginners.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "title": "Core Concept 2: Prompt Engineering",
+      "objective": "Learn and apply a structured framework for writing effective prompts to get desired AI outputs.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Your AI Superpower",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Master the R-C-T-F framework for prompt engineering and apply it to a business communication task.",
+          "script": {
+            "opening": "If an LLM is a powerful engine, then a prompt is the steering wheel, the gas pedal, and the GPS all in one. The quality of your output is almost entirely dependent on the quality of your input. Vague instructions lead to vague results. But clear, structured instructions can unlock incredible capabilities. This skill is called prompt engineering, and it's the most important lever you have for controlling AI. Let's learn a simple framework to make you an expert.",
+            "mainContent": [
+              {
+                "timestamp": "17:00",
+                "topic": "Concept Explanation: The Art of the Prompt",
+                "content": "Prompt engineering is the process of designing and refining your input to an AI model to get the most accurate, relevant, and useful output. It's a mix of instruction, context, and creativity. Instead of just asking a simple question, you are guiding the AI toward the specific answer you need. A good prompt acts like a detailed project brief for your AI assistant. It sets expectations, provides necessary background information, and defines what success looks like. The better the brief, the better the outcome. We're going to use a simple but highly effective four-part framework to structure our prompts: Role, Context, Task, and Format. By consistently using these four elements, you will see a dramatic improvement in the quality of your AI-generated content.",
+                "visualCue": "Show a graphic with a central circle labeled 'Prompt' and four connected circles labeled 'Role', 'Context', 'Task', and 'Format'."
+              },
+              {
+                "timestamp": "19:00",
+                "topic": "Step-by-Step Breakdown: The R-C-T-F Framework",
+                "content": "Let's break down the R-C-T-F framework. First, 'R' is for Role. You start by telling the AI who it should be. For example, 'Act as an expert marketing copywriter' or 'You are a helpful project manager.' This primes the model to adopt a specific tone, style, and knowledge base. Second, 'C' is for Context. This is the background information the AI needs to understand the situation. What is the project? Who is the audience? What is the goal? The more relevant context you provide, the better. Third, 'T' is for Task. This is the specific, actionable instruction. What do you want the AI to do? 'Write three email subject lines,' 'Brainstorm a list of risks,' or 'Explain this concept in simple terms.' Be direct and clear. Finally, 'F' is for Format. How do you want the output to be delivered? 'In a bulleted list,' 'As a JSON object,' 'In a professional, three-paragraph email,' or 'As a table with three columns.' This structures the output for you.",
+                "visualCue": "Show a slide with four quadrants, each detailing one part of the R-C-T-F framework with a short explanation."
+              },
+              {
+                "timestamp": "22:00",
+                "topic": "Example 2: Drafting a Professional Email",
+                "content": "Let's apply this. Imagine you need to email your team about a new project deadline. A bad prompt would be: 'write an email about the new deadline.' A great prompt using our framework would be: 'Role: You are a clear and concise project manager. Context: Our project, codenamed 'Phoenix,' has a new final delivery date of October 31st instead of October 15th. This is due to a change in client requirements. The team needs to be informed clearly but without causing panic. Task: Draft an email to the project team informing them of the new deadline. Explain the reason briefly and state that the project plan will be updated and shared by Friday. Format: The email should be professional, under 150 words, and have a clear subject line.' See the difference? The second prompt provides all the necessary ingredients for the AI to generate a perfect, ready-to-send email.",
+                "visualCue": "Show a 'Before' and 'After' comparison. 'Before' has the simple, vague prompt. 'After' has the detailed R-C-T-F prompt and the much better AI-generated email."
+              },
+              {
+                "timestamp": "25:00",
+                "topic": "Pro Tips for Better Prompts",
+                "content": "Once you've mastered the R-C-T-F framework, you can enhance your prompts with a few pro tips. First, use constraints. Tell the AI what *not* to do. For example, 'Write a product description, but do not use marketing jargon like 'synergy' or 'paradigm shift'.' Second, ask for multiple options. Instead of asking for one headline, ask for 'five different headlines, each targeting a different customer emotion.' This gives you more creative material to work with. Third, encourage iteration. End your prompt with a question like, 'Ask me any clarifying questions you have before you begin.' This can sometimes help the AI refine its approach. And finally, remember that prompting is iterative. Your first prompt might not be perfect. Analyze the output, see what's missing, and refine your prompt to get closer to your desired result. It's a conversation.",
+                "visualCue": "Show a slide with icons for each pro tip: A 'stop' sign for constraints, a 'numbered list' for options, and a 'refresh' icon for iteration."
+              }
+            ],
+            "summary": "We've learned that prompt engineering is key to getting great results. By using the R-C-T-F framework—Role, Context, Task, Format—you can provide clear, structured instructions. Enhance this with pro tips like using constraints and iterating on your prompts.",
+            "callToAction": "We've covered text, but AI can do so much more. In the next section, we'll explore the exciting world of AI for images, code, and other modalities."
+          },
+          "slides": [
+            {
+              "slideNumber": 12,
+              "title": "Prompt Engineering: Your AI Superpower",
+              "content": [
+                "The quality of your input",
+                "Determines the quality of your output"
+              ],
+              "speakerNotes": "Introduce the concept of prompt engineering.",
+              "visualType": "quote"
+            },
+            {
+              "slideNumber": 13,
+              "title": "The R-C-T-F Framework",
+              "content": [
+                "Role: Who the AI should be",
+                "Context: The background information",
+                "Task: The specific action to perform",
+                "Format: How to structure the output"
+              ],
+              "speakerNotes": "Explain the four core components of a great prompt.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 14,
+              "title": "Example: Drafting an Email",
+              "content": [
+                "Bad Prompt: 'Write an email'",
+                "Good Prompt: Uses R-C-T-F for clarity",
+                "Result: A specific, professional draft"
+              ],
+              "speakerNotes": "Use a practical example to show the framework in action.",
+              "visualType": "comparison"
+            },
+            {
+              "slideNumber": 15,
+              "title": "Pro Tips for Better Prompts",
+              "content": [
+                "Use constraints (what not to do)",
+                "Ask for multiple options",
+                "Iterate and refine your prompt"
+              ],
+              "speakerNotes": "Provide advanced tips for improving prompt quality.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "title": "Core Concept 3: Beyond Text",
+      "objective": "Explore different Generative AI modalities, focusing on text-to-image generation and its applications.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "AI for Images, Code, and More",
+          "duration": 10,
+          "type": "video",
+          "learningObjective": "Understand the concept of different AI modalities and learn best practices for text-to-image prompting.",
+          "script": {
+            "opening": "When most people think of Generative AI, they think of chatbots and text. But that's just the beginning. The same underlying principles that allow an AI to predict the next word can be adapted to predict the next pixel in an image, the next note in a song, or the next line of code. This is the world of multi-modality. Are you ready to go from writer to artist with just a few words?",
+            "mainContent": [
+              {
+                "timestamp": "27:00",
+                "topic": "Concept Explanation: Different AI Modalities",
+                "content": "Generative AI isn't limited to one type of content. We call these different types of content 'modalities.' The most common is text-to-text, which we've been focusing on. But there are many others. Text-to-image models, like Midjourney or DALL-E, take a text description and create a brand new image. Text-to-code models can write programming scripts based on a natural language request. There are also models for text-to-speech, text-to-video, and even text-to-audio. Each model is trained on a specific type of data—images, code libraries, or audio files—and learns the patterns within that data. This allows you to use your natural language prompting skills to create a rich variety of content, opening up huge creative and practical possibilities for professionals who aren't expert designers, programmers, or musicians.",
+                "visualCue": "Show a central 'Text Prompt' icon with arrows pointing to different output icons: a document (Text), a picture (Image), code brackets (Code), and a sound wave (Audio)."
+              },
+              {
+                "timestamp": "29:00",
+                "topic": "Step-by-Step Breakdown: Text-to-Image Prompting",
+                "content": "Creating images with AI is a lot like text prompting, but with a focus on visual language. Let's break down the steps for a good image prompt. Step 1: Define the Subject. Be clear about the main focus of your image. Is it 'a majestic lion' or 'a vintage robot'? Step 2: Describe the Style and Medium. This is crucial. Do you want a 'photograph,' a 'digital painting,' an 'anime drawing,' or a '3D render'? Use artistic styles like 'impressionist,' 'surrealist,' or 'minimalist.' Step 3: Specify the Composition and Lighting. How should the image be framed? 'Wide-angle shot,' 'close-up portrait.' What about the lighting? 'Dramatic lighting,' 'soft morning light,' 'cinematic lighting.' Step 4: Add Details and Modifiers. This is where you add the magic. 'Wearing a top hat,' 'in a futuristic city,' 'with vibrant colors.' The more specific details you add, the more control you have over the final image.",
+                "visualCue": "Show a slide with four visual steps: 1. Icon of a person (Subject) -> 2. Icon of a paintbrush (Style) -> 3. Icon of a camera (Composition) -> 4. Icon of a magic wand (Details)."
+              },
+              {
+                "timestamp": "32:00",
+                "topic": "Example 3: Creating a Logo Concept",
+                "content": "Let's try a complex business application. You're a startup founder who needs a logo concept for your new eco-friendly coffee brand, 'Terra Brew.' A simple prompt like 'logo for a coffee company' will give you generic results. A much better, more detailed prompt would be: 'Logo concept for 'Terra Brew,' an organic coffee brand. A minimalist vector logo, flat design. The logo should feature a coffee bean integrated with a leaf. Use earthy colors like green and brown. The background should be a clean, white canvas.' This prompt specifies the subject (coffee bean and leaf), the style (minimalist vector, flat design), and key details (earthy colors, brand name). This gives the AI a much clearer brief to generate unique and relevant logo ideas, which you can then show to a professional designer as a starting point.",
+                "visualCue": "Show a split screen. Left: The detailed text prompt. Right: A grid of 4-6 different logo concepts generated by an AI based on the prompt."
+              },
+              {
+                "timestamp": "35:00",
+                "topic": "Best Practices for Image Generation",
+                "content": "To get the best results from image models, keep a few best practices in mind. First, be incredibly descriptive. Adjectives are your best friend. Instead of 'a car,' try 'a sleek, red, 1960s convertible sports car.' Second, learn the power of 'negative prompts.' Many tools allow you to specify what you *don't* want to see. For example, you might add '--no text' or '--no extra limbs' to clean up your images. Third, understand that AI can struggle with certain things, like hands, text, and complex spatial relationships. Be prepared to generate multiple versions, or 'reroll,' to get the perfect image. Finally, be aware of copyright and ethical considerations. The legal landscape for AI-generated art is still evolving, so be cautious about using it for commercial purposes without understanding the terms of service of the tool you are using.",
+                "visualCue": "Show a slide with icons for best practices: A thesaurus for 'Descriptive', a minus sign for 'Negative Prompts', dice for 'Reroll', and a gavel for 'Ethics/Copyright'."
+              }
+            ],
+            "summary": "We've seen that Gen AI goes beyond text into modalities like images, code, and audio. For image generation, a great prompt defines the subject, style, composition, and details. Remember to be descriptive, use negative prompts, and be mindful of AI's limitations and ethics.",
+            "callToAction": "We've covered the core concepts. Now it's time to put it all together in a complete, practical walkthrough. In the next section, we'll tackle a real business project from start to finish."
+          },
+          "slides": [
+            {
+              "slideNumber": 16,
+              "title": "Generative AI is Multi-Modal",
+              "content": [
+                "Text-to-Text (ChatGPT)",
+                "Text-to-Image (Midjourney, DALL-E)",
+                "Text-to-Code (GitHub Copilot)",
+                "Text-to-Video, Audio, and more"
+              ],
+              "speakerNotes": "Introduce the concept of different AI modalities.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 17,
+              "title": "Anatomy of an Image Prompt",
+              "content": [
+                "1. Subject: The main focus",
+                "2. Style: The artistic medium",
+                "3. Composition: The framing and lighting",
+                "4. Details: The magic modifiers"
+              ],
+              "speakerNotes": "Break down the key elements of a successful text-to-image prompt.",
+              "visualType": "diagram"
+            },
+            {
+              "slideNumber": 18,
+              "title": "Example: Creating a Logo Concept",
+              "content": [
+                "Brand: 'Terra Brew' (Eco-coffee)",
+                "Prompt: Minimalist vector, bean + leaf",
+                "Result: Unique, relevant starting points"
+              ],
+              "speakerNotes": "Show a practical business use case for image generation.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 19,
+              "title": "Best Practices for Image AI",
+              "content": [
+                "Be hyper-descriptive (use adjectives)",
+                "Use negative prompts to exclude things",
+                "Iterate and 'reroll' for best results",
+                "Consider copyright and ethics"
+              ],
+              "speakerNotes": "Provide actionable tips for getting better image results.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "title": "Practical Application: A Business Use Case",
+      "objective": "Apply the learned frameworks and concepts to a complete, real-world business task.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Your First Gen AI Project",
+          "duration": 8,
+          "type": "video",
+          "learningObjective": "Execute a step-by-step walkthrough of using Generative AI to create a project proposal outline.",
+          "script": {
+            "opening": "Theory is great, but results are better. It's time to roll up our sleeves and apply everything we've learned to a common business task that many of us face: creating a project proposal. We're going to go from a blank page to a comprehensive, professional outline in just a few minutes, using the frameworks we've discussed. Let's build something together.",
+            "mainContent": [
+              {
+                "timestamp": "37:00",
+                "topic": "Complete Walkthrough: Creating a Project Proposal",
+                "content": "Our goal is to create a detailed outline for a proposal to develop a new mobile app for our company. The app will be an internal tool for employees to track their professional development hours. First, we'll use the R-C-T-F framework to draft our initial prompt. Role: 'You are an experienced project manager specializing in agile software development.' Context: 'I need to create a project proposal for a new internal mobile app called 'SkillUp.' The app allows employees to log training hours, track progress against goals, and discover new learning resources. The audience for this proposal is senior management, so it needs to be clear, professional, and persuasive.' Task: 'Generate a comprehensive outline for a project proposal document. Include sections for Introduction, Problem Statement, Proposed Solution, Key Features, Project Timeline, Budget Overview, and Success Metrics.' Format: 'Present this as a nested bulleted list. Use headings for each major section.' We'll input this prompt into an LLM. The AI will generate a structured outline. But we're not done. Now we iterate. We might ask a follow-up prompt: 'Flesh out the Key Features section with at least five specific examples of features for the SkillUp app.' Then another: 'For the Project Timeline section, create a high-level 6-month timeline with major milestones.' In just three prompts, we have a robust proposal outline.",
+                "visualCue": "Show a screen recording of this process. Start with a blank text editor, type the prompt, paste it into an AI chat interface, show the generated outline, and then show the follow-up prompts and the refined sections."
+              },
+              {
+                "timestamp": "40:00",
+                "topic": "A Reusable Prompt Template",
+                "content": "The beauty of this process is that you can create reusable templates for common tasks. Let's formalize our proposal prompt into a template you can adapt. It would look like this: 'Role: You are a [Your Profession, e.g., Marketing Manager]. Context: I am working on a [Project Type, e.g., social media campaign] for [Product/Service, e.g., our new line of sneakers]. The target audience is [Audience, e.g., young adults aged 18-25]. The main goal is to [Goal, e.g., increase brand awareness]. Task: Please generate a [Specific Output, e.g., content calendar for the first month]. Format: The output should be a [Desired Format, e.g., table with columns for Date, Platform, Content Idea, and Metric].' You can save this template and just fill in the bracketed information for any new project. This saves you from having to rethink the prompt structure every time, dramatically speeding up your workflow. This templating approach works for emails, reports, marketing copy, and so much more.",
+                "visualCue": "Display the prompt template on screen with the bracketed placeholders clearly highlighted, making it easy for students to copy."
+              },
+              {
+                "timestamp": "43:00",
+                "topic": "Customization and Iteration Tips",
+                "content": "Remember, the AI is your creative partner, not just a vending machine. The first output is a draft, not the final product. Here's how to customize and iterate effectively. First, be specific in your refinements. Instead of saying 'make it better,' say 'make the tone more formal' or 'rewrite this section to be more persuasive for a skeptical audience.' Second, you can provide examples. If you like a certain style, you can say, 'Rewrite the introduction in the style of this example:' and paste in a short text you admire. This is called 'few-shot prompting' and it's very effective. Finally, don't be afraid to mix and match. Take the best parts of several different AI-generated options and combine them with your own expertise. Your human judgment is the most important ingredient. The AI provides the raw material; you provide the final polish and strategic direction.",
+                "visualCue": "Show a simple loop diagram: [Prompt] -> [AI Output] -> [Human Review & Refine] -> [New Prompt], emphasizing the iterative cycle."
+              }
+            ],
+            "summary": "In this practical session, we walked through creating a project proposal outline using the R-C-T-F framework and iterative refinement. We also created a reusable prompt template to speed up future work and discussed how to customize outputs with specific feedback and examples.",
+            "callToAction": "You've now seen the entire workflow from concept to application. In our next section, we'll summarize the key takeaways from the course and provide you with a handy cheat sheet."
+          },
+          "slides": [
+            {
+              "slideNumber": 20,
+              "title": "Let's Build: A Project Proposal",
+              "content": [
+                "Goal: Create a proposal outline",
+                "Tool: LLM + R-C-T-F Framework",
+                "Outcome: From blank page to full outline"
+              ],
+              "speakerNotes": "Set the stage for the practical walkthrough.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 21,
+              "title": "The Initial Prompt (R-C-T-F)",
+              "content": [
+                "Role: Experienced Project Manager",
+                "Context: 'SkillUp' internal app proposal",
+                "Task: Generate a comprehensive outline",
+                "Format: Nested bulleted list"
+              ],
+              "speakerNotes": "Show the exact prompt used in the walkthrough.",
+              "visualType": "code"
+            },
+            {
+              "slideNumber": 22,
+              "title": "Reusable Prompt Template",
+              "content": [
+                "Role: [Your Profession]",
+                "Context: [Project Details]",
+                "Task: [Specific Output]",
+                "Format: [Desired Format]"
+              ],
+              "speakerNotes": "Provide a fill-in-the-blanks template for students to use.",
+              "visualType": "code"
+            },
+            {
+              "slideNumber": 23,
+              "title": "Tips for Iteration",
+              "content": [
+                "Give specific, targeted feedback",
+                "Provide examples of the style you want",
+                "Mix, match, and add your expertise"
+              ],
+              "speakerNotes": "Teach students how to refine the AI's initial output.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "title": "Summary & Cheat Sheet",
+      "objective": "Consolidate learning with key takeaways, a quick reference guide, and resources for further learning.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Putting It All Together",
+          "duration": 5,
+          "type": "video",
+          "learningObjective": "Recall the most important concepts from the course and know where to find additional resources.",
+          "script": {
+            "opening": "We have covered a tremendous amount of ground in a very short time. You've gone from a complete beginner to someone who understands the fundamentals of Generative AI and can apply them in a practical way. Now, let's crystallize that knowledge. We'll review the most critical takeaways and I'll introduce your course cheat sheet, a powerful reference guide for your ongoing AI journey.",
+            "mainContent": [
+              {
+                "timestamp": "45:00",
+                "topic": "Key Takeaways",
+                "content": "Let's recap the absolute essentials. First, Generative AI creates new content, while traditional AI analyzes existing data. This creative ability is the game-changer. Second, Large Language Models (LLMs) are the engines behind text generation, working by predicting the next word in a sequence. Third, your results depend on your prompts. The R-C-T-F framework—Role, Context, Task, Format—is your key to unlocking high-quality outputs. Fourth, AI is multi-modal. You can use prompts to create images, code, and more by being descriptive and specific. Fifth, always be critical. Remember the risk of hallucinations and never input sensitive data. Your human oversight is non-negotiable. Finally, the best approach is iterative. Treat AI as a collaborator. Prompt, review, refine. These six points are the foundation of everything you need to be an effective user of Generative AI.",
+                "visualCue": "Show a slide with six icons, each representing one of the key takeaways."
+              },
+              {
+                "timestamp": "47:00",
+                "topic": "Quick Reference Review",
+                "content": "To help you remember these concepts, I've created a downloadable PDF cheat sheet, which you can find in the course resources. Let's quickly review what's in it. It starts with key definitions for terms like LLM and Prompt Engineering. It has a compact summary of the R-C-T-F framework and our image prompting steps. It also includes a simple 'Do and Don't' list. For example: DO be specific and provide context. DON'T trust outputs blindly. There's also a quick-start checklist for your first AI project, guiding you from defining your goal to refining the final output. And finally, it includes the pro tips we discussed, like using constraints and asking for multiple options. I designed this to be a one-page guide you can keep on your desktop or print out. Use it as a reference whenever you're starting a new task with AI until it becomes second nature.",
+                "visualCue": "Show a preview of the PDF cheat sheet on screen, highlighting the different sections like 'Definitions', 'Frameworks', and 'Do's and Don'ts'."
+              },
+              {
+                "timestamp": "49:00",
+                "topic": "Additional Resources",
+                "content": "This course is your starting point, but the learning doesn't have to stop here. The field of Generative AI is evolving at an incredible pace. To stay up-to-date, I recommend a few resources. First, follow the official blogs of major AI labs like OpenAI, Google AI, and Anthropic. They often post about new features and research. Second, there are excellent newsletters that summarize the week's biggest AI news in a digestible format. Finally, the best way to learn is by doing. Many AI tools have communities, forums, or Discord servers where users share prompts and creations. Engaging with these communities can be a fantastic way to learn new techniques and see what's possible. Don't be afraid to experiment, play, and stay curious. The journey is just beginning.",
+                "visualCue": "Show a slide with logos of OpenAI, Google AI, and a generic newsletter icon, suggesting places for further learning."
+              }
+            ],
+            "summary": "We've recapped our six key takeaways, from the definition of Gen AI to the importance of iteration. You now have a comprehensive cheat sheet to guide you, and you know where to look for additional resources to continue your learning journey.",
+            "callToAction": "Next up is the final assessment, a chance for you to test your newfound knowledge. Let's see what you've learned."
+          },
+          "slides": [
+            {
+              "slideNumber": 24,
+              "title": "Your Key Takeaways",
+              "content": [
+                "1. Gen AI Creates, Traditional AI Analyzes",
+                "2. LLMs are Next-Word Prediction Engines",
+                "3. R-C-T-F is Your Prompting Framework",
+                "4. AI is Multi-Modal (Text, Image, etc.)",
+                "5. Always Verify, Never Trust Blindly",
+                "6. Iteration is the Key to Success"
+              ],
+              "speakerNotes": "Summarize the most important points of the entire course.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 25,
+              "title": "Your Quick Reference Cheat Sheet",
+              "content": [
+                "Key Definitions",
+                "Core Frameworks (R-C-T-F)",
+                "Do's and Don'ts",
+                "Project Checklist & Pro Tips"
+              ],
+              "speakerNotes": "Introduce the downloadable resource and its contents.",
+              "visualType": "image"
+            },
+            {
+              "slideNumber": 26,
+              "title": "Where to Go From Here",
+              "content": [
+                "Follow official AI lab blogs",
+                "Subscribe to AI newsletters",
+                "Join user communities to learn"
+              ],
+              "speakerNotes": "Provide students with resources for continued learning.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 8,
+      "title": "Assessment: Test Your Knowledge",
+      "objective": "Provide an overview of the final quiz and tips for students to succeed.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "Time to Check In",
+          "duration": 2,
+          "type": "video",
+          "learningObjective": "Prepare for the final assessment by understanding its structure and purpose.",
+          "script": {
+            "opening": "You've done the hard work, you've absorbed the concepts, and you've seen the practical applications. Now it's time to solidify your learning and test your knowledge with the final course assessment. Don't worry, this isn't about getting a perfect score. It's about reinforcing the key concepts so you can use them confidently in the real world.",
+            "mainContent": [
+              {
+                "timestamp": "50:00",
+                "topic": "Quiz Overview",
+                "content": "The final assessment consists of 15 questions designed to cover all the core concepts we've discussed. You'll see a mix of question types. There will be multiple-choice questions to test your understanding of key definitions and principles. There will be a few true or false questions to check your grasp of crucial facts, like the difference between generative and traditional AI. Finally, there will be a couple of scenario-based questions. In these, I'll present you with a short real-world problem, and you'll have to choose the best approach based on what you've learned about prompt engineering and AI application. The goal here is to ensure you can move from theory to practice. You'll have as much time as you need to complete it, so feel free to review your notes or the course videos if you're unsure about an answer.",
+                "visualCue": "Show a slide with three icons: one for Multiple Choice, one for True/False, and one for Scenario-based questions."
+              },
+              {
+                "timestamp": "51:00",
+                "topic": "Tips for Success",
+                "content": "Here are a few quick tips to help you succeed. First, read each question carefully. Pay close attention to keywords like 'best,' 'not,' or 'most likely.' Second, for the scenario questions, think about the frameworks we learned. Does the R-C-T-F framework apply here? What are the common mistakes to avoid? Use the principles from the course to guide your choice. Finally, after you submit your answers, be sure to review the explanations provided for each question, especially for any you got wrong. The explanations are designed to reinforce the concepts and clarify any points of confusion. This review is one of the most valuable parts of the learning process. Good luck, take your time, and I'm confident you'll do great.",
+                "visualCue": "Show a simple 'Tips for Success' slide with bullet points."
+              }
+            ],
+            "summary": "The assessment includes multiple-choice, true/false, and scenario questions. Take your time, read carefully, and be sure to review the explanations to maximize your learning.",
+            "callToAction": "When you're ready, proceed to the final quiz. After that, I'll see you in the final lecture to wrap up the course."
+          },
+          "slides": [
+            {
+              "slideNumber": 27,
+              "title": "Test Your Knowledge",
+              "content": [
+                "Reinforce key concepts",
+                "Build your confidence",
+                "Prepare for real-world application"
+              ],
+              "speakerNotes": "Introduce the purpose of the final assessment.",
+              "visualType": "bullets"
+            },
+            {
+              "slideNumber": 28,
+              "title": "Quiz Format",
+              "content": [
+                "15 total questions",
+                "Multiple Choice",
+                "True / False",
+                "Scenario-Based"
+              ],
+              "speakerNotes": "Explain the structure of the quiz.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sectionNumber": 9,
+      "title": "Closing: Your Journey with AI Starts Now",
+      "objective": "Congratulate students on course completion and provide clear next steps for their AI journey.",
+      "lectures": [
+        {
+          "lectureNumber": 1,
+          "title": "What's Next?",
+          "duration": 3,
+          "type": "video",
+          "learningObjective": "Feel a sense of accomplishment and be motivated to continue practicing and learning about Generative AI.",
+          "script": {
+            "opening": "Congratulations! You have officially completed 'Gen AI for Complete Beginners.' You've taken a huge step from being curious about AI to becoming a capable, knowledgeable user. You should be incredibly proud of the investment you've just made in yourself and your career. This is a milestone moment.",
+            "mainContent": [
+              {
+                "timestamp": "52:00",
+                "topic": "Congratulations & Recap",
+                "content": "In just one hour, you have built a solid foundation in one of the most important technologies of our time. You learned what Generative AI is, how Large Language Models work, and how to communicate with them effectively through prompt engineering. You've explored applications beyond text and walked through a practical business use case. You now have a framework and a set of skills that you can start applying today to save time, enhance your creativity, and deliver more value in your work. You possess the vocabulary to discuss AI intelligently and the confidence to experiment with these powerful tools. This is the foundation upon which you can build a deeper expertise.",
+                "visualCue": "Show a certificate of completion graphic with the student's name (placeholder) and the course title."
+              },
+              {
+                "timestamp": "53:00",
+                "topic": "Your Next Steps",
+                "content": "So, what's next? The key to retaining and growing these skills is practice. I challenge you to find one small task in your work this week that you can try to accomplish with the help of an AI tool. Maybe it's drafting a difficult email, brainstorming ideas for a presentation, or summarizing an article you've been meaning to read. Start small and build momentum. Use the cheat sheet from this course as your guide. The more you use these tools, the more intuitive they will become. Make it a habit to think, 'Could AI help me with this?' You'll be surprised at how often the answer is yes. Your goal now is to move from learning to doing.",
+                "visualCue": "Show a slide with a simple 3-step graphic: 1. Find a Task -> 2. Apply AI -> 3. Repeat."
+              },
+              {
+                "timestamp": "54:00",
+                "topic": "Call to Action",
+                "content": "Thank you so much for joining me on this journey. I hope you found this course valuable and that you're as excited as I am about the possibilities of Generative AI. If you enjoyed the course, I would be incredibly grateful if you could take a moment to leave a review. Your feedback helps other students decide if this course is right for them, and it helps me improve. Please also feel free to share your successes or ask questions in the Q&A section. I look forward to seeing what you create and accomplish with your new skills. Stay curious, keep experimenting, and thank you again. I wish you the very best on your continued AI journey.",
+                "visualCue": "Show a final slide with a thank you message and a clear call to action to leave a review."
+              }
+            ],
+            "summary": "Congratulations on completing the course! Your next step is to practice these skills on real tasks. Start small, build the habit, and keep experimenting.",
+            "callToAction": "Please take a moment to leave a review to help other students. Thank you, and good luck!"
+          },
+          "slides": [
+            {
+              "slideNumber": 29,
+              "title": "Congratulations!",
+              "content": [
+                "You have completed the course",
+                "You've built a solid AI foundation",
+                "Be proud of your new skills"
+              ],
+              "speakerNotes": "Start the closing lecture with positive reinforcement.",
+              "visualType": "title"
+            },
+            {
+              "slideNumber": 30,
+              "title": "Your Next Steps",
+              "content": [
+                "Practice on a small work task",
+                "Use your course cheat sheet",
+                "Make experimentation a habit"
+              ],
+              "speakerNotes": "Give students a clear, actionable plan for what to do after the course.",
+              "visualType": "bullets"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "finalQuiz": {
+      "title": "Final Assessment",
+      "passingScore": 70,
+      "questions": [
+        {
+          "questionNumber": 1,
+          "question": "What is the primary difference between Generative AI and traditional (discriminative) AI?",
+          "type": "mcq",
+          "options": [
+            "A) Generative AI creates new content, while traditional AI classifies existing data.",
+            "B) Generative AI is only used for text, while traditional AI is used for images.",
+            "C) Generative AI is faster than traditional AI.",
+            "D) There is no significant difference; the terms are interchangeable."
+          ],
+          "correctAnswer": "A",
+          "explanation": "The core distinction is creation versus classification. Generative AI models learn patterns to generate novel outputs (text, images), whereas traditional models are typically trained to discriminate between or classify existing data points (e.g., spam vs. not spam).",
+          "difficulty": "easy",
+          "conceptTested": "Foundation"
+        },
+        {
+          "questionNumber": 2,
+          "question": "What is the fundamental task of a Large Language Model (LLM)?",
+          "type": "mcq",
+          "options": [
+            "A) To understand human emotions.",
+            "B) To browse the internet in real-time.",
+            "C) To predict the next most likely word in a sequence.",
+            "D) To verify the factual accuracy of information."
+          ],
+          "correctAnswer": "C",
+          "explanation": "At their core, LLMs are sophisticated prediction engines. They are trained on vast datasets to calculate the statistical probability of the next word (or token) given the preceding sequence, which allows them to generate coherent text.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 1: LLMs"
+        },
+        {
+          "questionNumber": 3,
+          "question": "In the R-C-T-F prompt engineering framework, what does 'R' stand for?",
+          "type": "mcq",
+          "options": [
+            "A) Review",
+            "B) Role",
+            "C) Refine",
+            "D) Request"
+          ],
+          "correctAnswer": "B",
+          "explanation": "'R' stands for Role. Assigning a role to the AI (e.g., 'Act as an expert copywriter') is the first step in the framework, as it primes the model to adopt a specific tone, style, and knowledge base for its response.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 2: Prompt Engineering"
+        },
+        {
+          "questionNumber": 4,
+          "question": "Which of the following is a common mistake to avoid when using LLMs?",
+          "type": "mcq",
+          "options": [
+            "A) Providing too much context in the prompt.",
+            "B) Iterating on a prompt to improve the output.",
+            "C) Blindly trusting the output without fact-checking.",
+            "D) Specifying the desired format for the response."
+          ],
+          "correctAnswer": "C",
+          "explanation": "LLMs can 'hallucinate,' meaning they can generate plausible-sounding but incorrect information. It is crucial to always verify any factual claims, data, or critical information provided by an AI.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 1: LLMs"
+        },
+        {
+          "questionNumber": 5,
+          "question": "A marketing manager wants to create a social media content calendar. Which part of the R-C-T-F framework involves specifying that the output should be a table?",
+          "type": "mcq",
+          "options": [
+            "A) Role",
+            "B) Context",
+            "C) Task",
+            "D) Format"
+          ],
+          "correctAnswer": "D",
+          "explanation": "'F' stands for Format. This part of the prompt explicitly tells the AI how to structure the output, such as 'in a table with three columns,' 'as a bulleted list,' or 'in a professional email format.'",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 2: Prompt Engineering"
+        },
+        {
+          "questionNumber": 6,
+          "question": "The term 'modality' in the context of Generative AI refers to:",
+          "type": "mcq",
+          "options": [
+            "A) The speed of the AI model.",
+            "B) The ethical guidelines for using AI.",
+            "C) The type of content the AI can generate (e.g., text, image, audio).",
+            "D) The programming language the AI is written in."
+          ],
+          "correctAnswer": "C",
+          "explanation": "A modality refers to a particular type or form of data or content. In AI, common modalities include text, images, audio, and code. A multi-modal AI can understand or generate content across different types.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3: Beyond Text"
+        },
+        {
+          "questionNumber": 7,
+          "question": "When writing a prompt for a text-to-image model, which element is most crucial for defining the artistic look of the output?",
+          "type": "mcq",
+          "options": [
+            "A) The subject",
+            "B) The style and medium",
+            "C) The file size",
+            "D) The brand name"
+          ],
+          "correctAnswer": "B",
+          "explanation": "While the subject is important, the style and medium (e.g., 'digital painting,' 'photograph,' 'impressionist,' '3D render') are what dictate the overall aesthetic and artistic feel of the generated image.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3: Beyond Text"
+        },
+        {
+          "questionNumber": 8,
+          "question": "What was the key technological innovation from 2017 that significantly advanced the capabilities of LLMs?",
+          "type": "mcq",
+          "options": [
+            "A) The invention of the computer mouse.",
+            "B) The development of Generative Adversarial Networks (GANs).",
+            "C) The creation of the 'Transformer' architecture.",
+            "D) The launch of the first smartphone."
+          ],
+          "correctAnswer": "C",
+          "explanation": "The 'Transformer' architecture, introduced in a paper by Google researchers in 2017, was a revolutionary step. Its 'attention mechanism' allowed models to process language with a much deeper understanding of context, paving the way for modern LLMs like GPT.",
+          "difficulty": "hard",
+          "conceptTested": "Foundation"
+        },
+        {
+          "questionNumber": 9,
+          "question": "What does the term 'tokenization' refer to in the context of an LLM?",
+          "type": "mcq",
+          "options": [
+            "A) The process of fact-checking the AI's output.",
+            "B) The process of breaking down input text into smaller pieces.",
+            "C) The process of converting an image into text.",
+            "D) The process of securing the AI model from hackers."
+          ],
+          "correctAnswer": "B",
+          "explanation": "Tokenization is the first step in how an LLM processes a prompt. It involves breaking the input sentence or text into smaller units called tokens (which can be words, parts of words, or punctuation) that the model can then analyze.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 1: LLMs"
+        },
+        {
+          "questionNumber": 10,
+          "question": "A 'negative prompt' in a text-to-image model is used to:",
+          "type": "mcq",
+          "options": [
+            "A) Make the image look more pessimistic.",
+            "B) Specify what you *do not* want to see in the image.",
+            "C) Invert the colors of the final image.",
+            "D) Generate a text description of an image."
+          ],
+          "correctAnswer": "B",
+          "explanation": "A negative prompt is a powerful feature that allows users to guide the AI by listing elements to exclude. For example, one might add '--no blurry background' or '--no text' to improve the quality and relevance of the generated image.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3: Beyond Text"
+        },
+        {
+          "questionNumber": 11,
+          "question": "It is always safe to input confidential company data into a public Generative AI tool like the free version of ChatGPT.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B",
+          "explanation": "This is false. Public versions of AI tools often use user inputs to train their models. You should never input sensitive, proprietary, or confidential information unless you are using an enterprise-grade version with explicit data privacy guarantees.",
+          "difficulty": "easy",
+          "conceptTested": "Core Concept 1: LLMs"
+        },
+        {
+          "questionNumber": 12,
+          "question": "The R-C-T-F framework is a rigid rule that must be followed in the exact order for every single prompt.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B",
+          "explanation": "This is false. The R-C-T-F framework is a powerful guideline and mental model to help you structure effective prompts, but it is not a rigid rule. For simple tasks, you may not need all four parts, and the order can sometimes be flexible. It's a tool, not a law.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 2: Prompt Engineering"
+        },
+        {
+          "questionNumber": 13,
+          "question": "Generative AI models 'understand' text in the same way a human does.",
+          "type": "truefalse",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B",
+          "explanation": "This is false. AI models do not possess consciousness or true understanding. They are mathematical models that have learned to identify and replicate complex statistical patterns in data. Their 'understanding' is a simulation based on pattern recognition, not human-like comprehension.",
+          "difficulty": "hard",
+          "conceptTested": "Core Concept 1: LLMs"
+        },
+        {
+          "questionNumber": 14,
+          "question": "You are a junior analyst asked to brainstorm potential risks for a new product launch. You are new to the company and the product. What is the BEST prompt to start with?",
+          "type": "scenario",
+          "options": [
+            "A) 'List risks for a product launch.'",
+            "B) 'Act as a senior risk management consultant with 20 years of experience. Our company is launching a new mobile app for fitness tracking. Brainstorm a list of potential risks covering technical, market, and operational categories. Format as a bulleted list.'",
+            "C) 'Tell me about risks.'",
+            "D) 'Write a long report on all possible risks for a new fitness app, including a full budget and timeline.'"
+          ],
+          "correctAnswer": "B",
+          "explanation": "Option B is the strongest because it effectively uses all parts of the R-C-T-F framework. It assigns a knowledgeable 'Role,' provides specific 'Context' (new fitness app), gives a clear 'Task' (brainstorm risks in categories), and specifies the 'Format' (bulleted list). The other options are too vague or ask for too much at once.",
+          "difficulty": "medium",
+          "conceptTested": "Practical Application"
+        },
+        {
+          "questionNumber": 15,
+          "question": "A designer is trying to create an image of a single, perfect red apple on a table. The AI keeps generating images with two or three apples. What is the MOST effective next step?",
+          "type": "scenario",
+          "options": [
+            "A) Give up, because the AI cannot count.",
+            "B) Rerun the exact same prompt ten more times and hope for the best.",
+            "C) Refine the prompt to be more specific, such as 'A single, solitary red apple...' and potentially use a negative prompt like '--no multiple apples'.",
+            "D) Describe the table in more detail."
+          ],
+          "correctAnswer": "C",
+          "explanation": "This scenario highlights the importance of iteration and specificity. The best approach is to refine the prompt to be more explicit about the desired number ('single, solitary') and use features like negative prompts to exclude unwanted elements. This is a more strategic approach than simply repeating the same failed prompt.",
+          "difficulty": "medium",
+          "conceptTested": "Core Concept 3: Beyond Text"
+        }
+      ]
+    },
+    "practicalAssignment": {
+      "title": "Your First AI-Powered Business Communication",
+      "description": "Apply the R-C-T-F prompt engineering framework to generate a piece of business communication relevant to your work. This hands-on project will solidify your ability to translate a real-world need into an effective AI prompt.",
+      "requirements": [
+        "Choose a common business communication task (e.g., an email to a client, a summary of a meeting, a short project update, a marketing post).",
+        "Write a detailed prompt using all four elements of the R-C-T-F framework (Role, Context, Task, Format).",
+        "Generate a response from a Generative AI tool of your choice (like ChatGPT, Claude, Gemini, etc.).",
+        "Review the AI's output and write a brief (2-3 sentences) analysis of its quality. If it's not perfect, write one follow-up prompt you would use to refine it."
+      ],
+      "deliverables": [
+        "A document containing: 1. Your initial R-C-T-F prompt. 2. The AI-generated response. 3. Your brief analysis and your refinement prompt."
+      ],
+      "evaluationCriteria": [
+        "Clarity and completeness of the R-C-T-F prompt.",
+        "Relevance of the chosen task to a business context.",
+        "Thoughtfulness of the analysis and the refinement prompt."
+      ]
+    }
+  },
+  "cheatSheet": {
+    "title": "Generative AI Quick Reference Guide",
+    "sections": [
+      {
+        "heading": "Key Definitions",
+        "items": [
+          "Generative AI: AI that creates new, original content (text, images, etc.).",
+          "LLM (Large Language Model): A massive neural network trained on text data to predict the next word in a sequence.",
+          "Prompt: An instruction or query given to an AI model to generate a response.",
+          "Hallucination: When an AI confidently states false or fabricated information."
+        ]
+      },
+      {
+        "heading": "The R-C-T-F Prompting Framework",
+        "items": [
+          "Role: Assign a persona. 'Act as an expert...'",
+          "Context: Provide background info, audience, and goal.",
+          "Task: Give a clear, specific, and actionable instruction.",
+          "Format: Specify the desired output structure (list, table, email)."
+        ]
+      },
+      {
+        "heading": "Text-to-Image Prompting Steps",
+        "items": [
+          "1. Subject: The main focus of the image.",
+          "2. Style/Medium: The artistic look (e.g., photo, painting, 3D render).",
+          "3. Composition/Lighting: The framing and mood (e.g., wide-angle, cinematic lighting).",
+          "4. Details: Specific modifiers that add uniqueness."
+        ]
+      }
+    ],
+    "doList": [
+      "Be as specific and detailed as possible in your prompts.",
+      "Verify any factual information generated by the AI.",
+      "Iterate and refine your prompts to improve results.",
+      "Use constraints to guide the AI on what to avoid."
+    ],
+    "dontList": [
+      "Don't use vague, one-word prompts.",
+      "Don't trust the AI's output blindly.",
+      "Don't input sensitive, private, or confidential information.",
+      "Don't expect perfection on the first try."
+    ],
+    "checklist": [
+      "Step 1: Define your goal. What do you want to achieve?",
+      "Step 2: Choose the right AI tool/modality (text, image, etc.).",
+      "Step 3: Draft your prompt using the R-C-T-F framework.",
+      "Step 4: Generate the output.",
+      "Step 5: Review, critique, and identify areas for improvement.",
+      "Step 6: Refine your prompt and regenerate if necessary.",
+      "Step 7: Add your own human expertise and polish."
+    ],
+    "tips": [
+      "Ask the AI for multiple options (e.g., 'Give me 5 versions').",
+      "Provide examples of the style you want ('in the style of...').",
+      "Save your best prompts as templates for future use."
+    ]
+  },
+  "thumbnailSuggestions": [
+    {
+      "concept": "A human brain icon on the left, with glowing digital lines connecting to a robot/AI head icon on the right, symbolizing collaboration.",
+      "text": "AI in 60 Mins",
+      "colors": [
+        "#4A90E2",
+        "#FFFFFF"
+      ],
+      "style": "professional"
+    },
+    {
+      "concept": "A simple lightbulb icon made of interconnected digital circuit lines. The lightbulb is glowing brightly.",
+      "text": "Gen AI Beginner",
+      "colors": [
+        "#F5A623",
+        "#000000"
+      ],
+      "style": "bold"
+    },
+    {
+      "concept": "A minimalist design with a text cursor blinking, followed by a series of icons: a document, a picture, and code brackets.",
+      "text": "Create with AI",
+      "colors": [
+        "#2D3748",
+        "#F7FAFC"
+      ],
+      "style": "minimal"
+    }
+  ],
+  "promotionalContent": {
+    "promoVideo": {
+      "script": " (0:00-0:15) [Upbeat, modern music starts. Quick cuts of professionals looking overwhelmed with work - emails, charts, documents.]\nNarrator: Feeling buried in busywork? Struggling to find time for the ideas that truly matter? \n\n(0:15-0:30) [Screen shows a simple search bar. Someone types 'Summarize this 30-page report into 5 bullet points.' A perfect summary appears instantly. Text on screen: 'Work Smarter, Not Harder.']\nNarrator: What if you could change that? In just 60 minutes, you can learn to use the power of Generative AI to reclaim your time and supercharge your creativity.\n\n(0:30-1:00) [Split screen showing course content: a slide on the R-C-T-F framework, a demo of creating an image from a text prompt.]\nNarrator: I'm [Your Name], and in my new course, 'Gen AI for Complete Beginners,' I'll guide you through everything you need to know. No jargon, no complex code. You will learn what AI really is, master the simple framework for writing perfect prompts, and apply your new skills to real-world business tasks, from drafting emails to brainstorming entire marketing campaigns.\n\n(1:00-1:30) [Show testimonials or graphics with key benefits: 'Boost Productivity,' 'Enhance Creativity,' 'Future-Proof Your Career.']\nNarrator: This course is for any professional who wants to stay ahead of the curve. Whether you're a marketer, a project manager, or an entrepreneur, AI is the new essential skill, and this is your perfect starting point.\n\n(1:30-2:00) [Narrator appears on screen, speaking directly to the camera. Course title and a 'Enroll Now' button are displayed.]\nNarrator: Stop just hearing about AI and start using it. Your journey from beginner to confident AI user is just one hour away. Enroll now in 'Gen AI for Complete Beginners' and unlock your new productivity superpower. I'll see you in the course!",
+      "keyPoints": [
+        "Go from overwhelmed to empowered in just 60 minutes.",
+        "Learn practical AI skills for real-world business tasks.",
+        "No technical experience required - perfect for absolute beginners."
+      ]
+    },
+    "welcomeMessage": "Welcome to the course! I'm so excited you're here to start your journey with Generative AI. Over the next hour, we'll demystify this incredible technology and equip you with practical skills you can use right away. I recommend having a notepad ready to jot down ideas for how you can apply these concepts to your own work. Let's dive in and unlock your new superpower!"
+  },
+  "_meta": {
+    "courseId": "course-1",
+    "generatedAt": "2026-02-02T10:40:51.455Z",
+    "provider": "gemini-2.5-pro",
+    "attempts": 1
+  }
+}

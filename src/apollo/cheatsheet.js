@@ -6,6 +6,11 @@ const fs = require('fs');
 const path = require('path');
 const { PDFDocument, rgb, StandardFonts } = require('pdf-lib');
 
+function sanitize(text) {
+  // Strip non-WinAnsi characters (keep ASCII + common Latin-1 range)
+  return String(text || '').replace(/[^\x20-\x7E\xA0-\xFF]/g, '').trim();
+}
+
 async function generateCheatsheet(courseContent, outputDir) {
   console.log('\n   CHEATSHEET: Generating PDF...');
 
@@ -29,7 +34,9 @@ async function generateCheatsheet(courseContent, outputDir) {
   let y = pageHeight - margin;
 
   // Helper to add text
-  function addText(text, options = {}) {
+  function addText(rawText, options = {}) {
+    const text = sanitize(rawText);
+    if (!text) return;
     const { size = 10, bold = false, color = rgb(0.2, 0.2, 0.2), indent = 0 } = options;
     const f = bold ? fontBold : font;
 
@@ -82,10 +89,10 @@ async function generateCheatsheet(courseContent, outputDir) {
     addText("DO'S AND DON'TS", { size: 13, bold: true, color: rgb(0.1, 0.1, 0.18) });
     y -= 4;
     for (const item of cheatSheet.doList || []) {
-      addText(`✓ ${item}`, { size: 10, indent: 10, color: rgb(0, 0.5, 0) });
+      addText(`+ ${item}`, { size: 10, indent: 10, color: rgb(0, 0.5, 0) });
     }
     for (const item of cheatSheet.dontList || []) {
-      addText(`✗ ${item}`, { size: 10, indent: 10, color: rgb(0.7, 0, 0) });
+      addText(`- ${item}`, { size: 10, indent: 10, color: rgb(0.7, 0, 0) });
     }
   }
 
@@ -95,7 +102,7 @@ async function generateCheatsheet(courseContent, outputDir) {
     addText('QUICK CHECKLIST', { size: 13, bold: true, color: rgb(0.1, 0.1, 0.18) });
     y -= 4;
     for (const item of cheatSheet.checklist) {
-      addText(`□ ${item}`, { size: 10, indent: 10 });
+      addText(`[ ] ${item}`, { size: 10, indent: 10 });
     }
   }
 

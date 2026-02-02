@@ -67,7 +67,7 @@ async function renderWithFFmpeg(slides, audioPath, outputPath) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
   // Create slide images from text using sharp
-  const tempDir = path.join(dir, '_temp_slides');
+  const tempDir = path.join(dir, `_temp_slides_${Date.now()}`);
   if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
 
   const slideFiles = [];
@@ -81,8 +81,8 @@ async function renderWithFFmpeg(slides, audioPath, outputPath) {
   // Create concat file
   const audioDuration = audioPath && fs.existsSync(audioPath) ? getAudioDuration(audioPath) : 60;
   const perSlide = audioDuration / slideFiles.length;
-  const listFile = path.join(tempDir, 'slides.txt');
-  const content = slideFiles.map(f => `file '${f}'\nduration ${perSlide}`).join('\n') + `\nfile '${slideFiles[slideFiles.length - 1]}'`;
+  const listFile = path.resolve(path.join(tempDir, 'slides.txt'));
+  const content = slideFiles.map(f => `file '${path.resolve(f)}'\nduration ${perSlide}`).join('\n') + `\nfile '${path.resolve(slideFiles[slideFiles.length - 1])}'`;
   fs.writeFileSync(listFile, content);
 
   // Create video from slides

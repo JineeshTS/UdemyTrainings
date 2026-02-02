@@ -1,0 +1,228 @@
+{
+  "finalQuiz": {
+    "title": "Final Assessment",
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionNumber": 1,
+        "question": "What is the primary difference between Generative AI and traditional (discriminative) AI?",
+        "type": "mcq",
+        "options": [
+          "A) Generative AI creates new content, while traditional AI classifies existing data.",
+          "B) Generative AI is only used for text, while traditional AI is used for images.",
+          "C) Generative AI is faster than traditional AI.",
+          "D) There is no significant difference; the terms are interchangeable."
+        ],
+        "correctAnswer": "A",
+        "explanation": "The core distinction is creation versus classification. Generative AI models learn patterns to generate novel outputs (text, images), whereas traditional models are typically trained to discriminate between or classify existing data points (e.g., spam vs. not spam).",
+        "difficulty": "easy",
+        "conceptTested": "Foundation"
+      },
+      {
+        "questionNumber": 2,
+        "question": "What is the fundamental task of a Large Language Model (LLM)?",
+        "type": "mcq",
+        "options": [
+          "A) To understand human emotions.",
+          "B) To browse the internet in real-time.",
+          "C) To predict the next most likely word in a sequence.",
+          "D) To verify the factual accuracy of information."
+        ],
+        "correctAnswer": "C",
+        "explanation": "At their core, LLMs are sophisticated prediction engines. They are trained on vast datasets to calculate the statistical probability of the next word (or token) given the preceding sequence, which allows them to generate coherent text.",
+        "difficulty": "easy",
+        "conceptTested": "Core Concept 1: LLMs"
+      },
+      {
+        "questionNumber": 3,
+        "question": "In the R-C-T-F prompt engineering framework, what does 'R' stand for?",
+        "type": "mcq",
+        "options": [
+          "A) Review",
+          "B) Role",
+          "C) Refine",
+          "D) Request"
+        ],
+        "correctAnswer": "B",
+        "explanation": "'R' stands for Role. Assigning a role to the AI (e.g., 'Act as an expert copywriter') is the first step in the framework, as it primes the model to adopt a specific tone, style, and knowledge base for its response.",
+        "difficulty": "easy",
+        "conceptTested": "Core Concept 2: Prompt Engineering"
+      },
+      {
+        "questionNumber": 4,
+        "question": "Which of the following is a common mistake to avoid when using LLMs?",
+        "type": "mcq",
+        "options": [
+          "A) Providing too much context in the prompt.",
+          "B) Iterating on a prompt to improve the output.",
+          "C) Blindly trusting the output without fact-checking.",
+          "D) Specifying the desired format for the response."
+        ],
+        "correctAnswer": "C",
+        "explanation": "LLMs can 'hallucinate,' meaning they can generate plausible-sounding but incorrect information. It is crucial to always verify any factual claims, data, or critical information provided by an AI.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 1: LLMs"
+      },
+      {
+        "questionNumber": 5,
+        "question": "A marketing manager wants to create a social media content calendar. Which part of the R-C-T-F framework involves specifying that the output should be a table?",
+        "type": "mcq",
+        "options": [
+          "A) Role",
+          "B) Context",
+          "C) Task",
+          "D) Format"
+        ],
+        "correctAnswer": "D",
+        "explanation": "'F' stands for Format. This part of the prompt explicitly tells the AI how to structure the output, such as 'in a table with three columns,' 'as a bulleted list,' or 'in a professional email format.'",
+        "difficulty": "easy",
+        "conceptTested": "Core Concept 2: Prompt Engineering"
+      },
+      {
+        "questionNumber": 6,
+        "question": "The term 'modality' in the context of Generative AI refers to:",
+        "type": "mcq",
+        "options": [
+          "A) The speed of the AI model.",
+          "B) The ethical guidelines for using AI.",
+          "C) The type of content the AI can generate (e.g., text, image, audio).",
+          "D) The programming language the AI is written in."
+        ],
+        "correctAnswer": "C",
+        "explanation": "A modality refers to a particular type or form of data or content. In AI, common modalities include text, images, audio, and code. A multi-modal AI can understand or generate content across different types.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 3: Beyond Text"
+      },
+      {
+        "questionNumber": 7,
+        "question": "When writing a prompt for a text-to-image model, which element is most crucial for defining the artistic look of the output?",
+        "type": "mcq",
+        "options": [
+          "A) The subject",
+          "B) The style and medium",
+          "C) The file size",
+          "D) The brand name"
+        ],
+        "correctAnswer": "B",
+        "explanation": "While the subject is important, the style and medium (e.g., 'digital painting,' 'photograph,' 'impressionist,' '3D render') are what dictate the overall aesthetic and artistic feel of the generated image.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 3: Beyond Text"
+      },
+      {
+        "questionNumber": 8,
+        "question": "What was the key technological innovation from 2017 that significantly advanced the capabilities of LLMs?",
+        "type": "mcq",
+        "options": [
+          "A) The invention of the computer mouse.",
+          "B) The development of Generative Adversarial Networks (GANs).",
+          "C) The creation of the 'Transformer' architecture.",
+          "D) The launch of the first smartphone."
+        ],
+        "correctAnswer": "C",
+        "explanation": "The 'Transformer' architecture, introduced in a paper by Google researchers in 2017, was a revolutionary step. Its 'attention mechanism' allowed models to process language with a much deeper understanding of context, paving the way for modern LLMs like GPT.",
+        "difficulty": "hard",
+        "conceptTested": "Foundation"
+      },
+      {
+        "questionNumber": 9,
+        "question": "What does the term 'tokenization' refer to in the context of an LLM?",
+        "type": "mcq",
+        "options": [
+          "A) The process of fact-checking the AI's output.",
+          "B) The process of breaking down input text into smaller pieces.",
+          "C) The process of converting an image into text.",
+          "D) The process of securing the AI model from hackers."
+        ],
+        "correctAnswer": "B",
+        "explanation": "Tokenization is the first step in how an LLM processes a prompt. It involves breaking the input sentence or text into smaller units called tokens (which can be words, parts of words, or punctuation) that the model can then analyze.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 1: LLMs"
+      },
+      {
+        "questionNumber": 10,
+        "question": "A 'negative prompt' in a text-to-image model is used to:",
+        "type": "mcq",
+        "options": [
+          "A) Make the image look more pessimistic.",
+          "B) Specify what you *do not* want to see in the image.",
+          "C) Invert the colors of the final image.",
+          "D) Generate a text description of an image."
+        ],
+        "correctAnswer": "B",
+        "explanation": "A negative prompt is a powerful feature that allows users to guide the AI by listing elements to exclude. For example, one might add '--no blurry background' or '--no text' to improve the quality and relevance of the generated image.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 3: Beyond Text"
+      },
+      {
+        "questionNumber": 11,
+        "question": "It is always safe to input confidential company data into a public Generative AI tool like the free version of ChatGPT.",
+        "type": "truefalse",
+        "options": [
+          "A) True",
+          "B) False"
+        ],
+        "correctAnswer": "B",
+        "explanation": "This is false. Public versions of AI tools often use user inputs to train their models. You should never input sensitive, proprietary, or confidential information unless you are using an enterprise-grade version with explicit data privacy guarantees.",
+        "difficulty": "easy",
+        "conceptTested": "Core Concept 1: LLMs"
+      },
+      {
+        "questionNumber": 12,
+        "question": "The R-C-T-F framework is a rigid rule that must be followed in the exact order for every single prompt.",
+        "type": "truefalse",
+        "options": [
+          "A) True",
+          "B) False"
+        ],
+        "correctAnswer": "B",
+        "explanation": "This is false. The R-C-T-F framework is a powerful guideline and mental model to help you structure effective prompts, but it is not a rigid rule. For simple tasks, you may not need all four parts, and the order can sometimes be flexible. It's a tool, not a law.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 2: Prompt Engineering"
+      },
+      {
+        "questionNumber": 13,
+        "question": "Generative AI models 'understand' text in the same way a human does.",
+        "type": "truefalse",
+        "options": [
+          "A) True",
+          "B) False"
+        ],
+        "correctAnswer": "B",
+        "explanation": "This is false. AI models do not possess consciousness or true understanding. They are mathematical models that have learned to identify and replicate complex statistical patterns in data. Their 'understanding' is a simulation based on pattern recognition, not human-like comprehension.",
+        "difficulty": "hard",
+        "conceptTested": "Core Concept 1: LLMs"
+      },
+      {
+        "questionNumber": 14,
+        "question": "You are a junior analyst asked to brainstorm potential risks for a new product launch. You are new to the company and the product. What is the BEST prompt to start with?",
+        "type": "scenario",
+        "options": [
+          "A) 'List risks for a product launch.'",
+          "B) 'Act as a senior risk management consultant with 20 years of experience. Our company is launching a new mobile app for fitness tracking. Brainstorm a list of potential risks covering technical, market, and operational categories. Format as a bulleted list.'",
+          "C) 'Tell me about risks.'",
+          "D) 'Write a long report on all possible risks for a new fitness app, including a full budget and timeline.'"
+        ],
+        "correctAnswer": "B",
+        "explanation": "Option B is the strongest because it effectively uses all parts of the R-C-T-F framework. It assigns a knowledgeable 'Role,' provides specific 'Context' (new fitness app), gives a clear 'Task' (brainstorm risks in categories), and specifies the 'Format' (bulleted list). The other options are too vague or ask for too much at once.",
+        "difficulty": "medium",
+        "conceptTested": "Practical Application"
+      },
+      {
+        "questionNumber": 15,
+        "question": "A designer is trying to create an image of a single, perfect red apple on a table. The AI keeps generating images with two or three apples. What is the MOST effective next step?",
+        "type": "scenario",
+        "options": [
+          "A) Give up, because the AI cannot count.",
+          "B) Rerun the exact same prompt ten more times and hope for the best.",
+          "C) Refine the prompt to be more specific, such as 'A single, solitary red apple...' and potentially use a negative prompt like '--no multiple apples'.",
+          "D) Describe the table in more detail."
+        ],
+        "correctAnswer": "C",
+        "explanation": "This scenario highlights the importance of iteration and specificity. The best approach is to refine the prompt to be more explicit about the desired number ('single, solitary') and use features like negative prompts to exclude unwanted elements. This is a more strategic approach than simply repeating the same failed prompt.",
+        "difficulty": "medium",
+        "conceptTested": "Core Concept 3: Beyond Text"
+      }
+    ]
+  },
+  "sectionQuizzes": []
+}
