@@ -19,7 +19,7 @@ async function isChatterboxAvailable() {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 5000);
-    const res = await fetch(`${CHATTERBOX_URL}/health`, { signal: controller.signal });
+    const res = await fetch(`${CHATTERBOX_URL}/health`, { signal: controller.signal, headers: { 'ngrok-skip-browser-warning': 'true' } });
     clearTimeout(timeout);
     return res.ok;
   } catch {
@@ -28,36 +28,84 @@ async function isChatterboxAvailable() {
 }
 
 /**
+ * Split text into chunks of ~400 words at sentence boundaries
+ */
+function splitTextIntoChunks(text, maxWords = 250) {
+  const sentences = text.replace(/\n\n/g, '. ').split(/(?<=[.!?])\s+/);
+  const chunks = [];
+  let current = [];
+  let wordCount = 0;
+
+  for (const sentence of sentences) {
+    const words = sentence.split(/\s+/).length;
+    if (wordCount + words > maxWords && current.length > 0) {
+      chunks.push(current.join(' '));
+      current = [sentence];
+      wordCount = words;
+    } else {
+      current.push(sentence);
+      wordCount += words;
+    }
+  }
+  if (current.length > 0) chunks.push(current.join(' '));
+  return chunks;
+}
+
+/**
  * Generate narration via Chatterbox (OpenAI-compatible API)
+ * Splits long text into chunks and concatenates audio
  */
 async function generateWithChatterbox(text, outputPath) {
   const { execSync } = require('child_process');
-
-  const res = await fetch(`${CHATTERBOX_URL}/v1/audio/speech`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: 'chatterbox',
-      input: text,
-      voice: 'reference',
-      response_format: 'wav'
-    })
-  });
-
-  if (!res.ok) throw new Error(`Chatterbox: ${res.status} ${res.statusText}`);
-
-  const buffer = Buffer.from(await res.arrayBuffer());
   const dir = path.dirname(outputPath);
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-  // Server returns WAV — convert to MP3 via ffmpeg
+  const chunks = splitTextIntoChunks(text);
+  const wavParts = [];
+
+  for (let i = 0; i < chunks.length; i++) {
+    console.log(`     Chunk ${i + 1}/${chunks.length} (${chunks[i].split(/\s+/).length} words)...`);
+    const res = await fetch(`${CHATTERBOX_URL}/v1/audio/speech`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'ngrok-skip-browser-warning': 'true' },
+      body: JSON.stringify({
+        model: 'chatterbox',
+        input: chunks[i],
+        voice: 'reference',
+        response_format: 'wav'
+      })
+    });
+
+    if (!res.ok) throw new Error(`Chatterbox: ${res.status} ${res.statusText}`);
+
+    const buffer = Buffer.from(await res.arrayBuffer());
+    const partPath = outputPath.replace('.mp3', `-part${i}.wav`);
+    fs.writeFileSync(partPath, buffer);
+    wavParts.push(partPath);
+    // Wait between chunks to avoid GPU overload
+    if (i < chunks.length - 1) await new Promise(r => setTimeout(r, 2000));
+  }
+
+  // Concatenate WAV parts and convert to MP3
   const wavPath = outputPath.replace('.mp3', '.wav');
-  fs.writeFileSync(wavPath, buffer);
+  if (wavParts.length === 1) {
+    fs.renameSync(wavParts[0], wavPath);
+  } else {
+    const listFile = outputPath.replace('.mp3', '-list.txt');
+    fs.writeFileSync(listFile, wavParts.map(p => `file '${p}'`).join('\n'));
+    try {
+      execSync(`ffmpeg -y -f concat -safe 0 -i "${listFile}" -c copy "${wavPath}"`, { stdio: 'pipe' });
+    } catch {
+      fs.renameSync(wavParts[0], wavPath);
+    }
+    fs.unlinkSync(listFile);
+    for (const p of wavParts) { try { fs.unlinkSync(p); } catch {} }
+  }
+
   try {
     execSync(`ffmpeg -y -i "${wavPath}" -codec:a libmp3lame -b:a 192k "${outputPath}"`, { stdio: 'pipe' });
     fs.unlinkSync(wavPath);
   } catch {
-    // If ffmpeg fails, keep the WAV as fallback
     fs.renameSync(wavPath, outputPath);
   }
 
@@ -168,7 +216,8 @@ async function generateCourseNarration(courseContent, outputDir, options = {}) {
       }
 
       lectureIndex++;
-      await new Promise(r => setTimeout(r, 500));
+      // Wait between lectures to let GPU cool down
+      await new Promise(r => setTimeout(r, 3000));
     }
   }
 
