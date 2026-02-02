@@ -1,0 +1,69 @@
+{
+  "name": "udemycrores",
+  "version": "2.0.0",
+  "description": "Automated Udemy Course Generation System - 500 micro-courses (Gemini + Chatterbox)",
+  "main": "src/scripts/courseOrchestrator.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/scripts/courseOrchestrator.js",
+    "generate": "node src/scripts/courseOrchestrator.js",
+    "generate:single": "node src/scripts/courseOrchestrator.js --course",
+    "generate:batch": "node src/scripts/batchRunner.js",
+    "curriculum": "node src/apollo/curriculum.js",
+    "scriptwriter": "node src/apollo/scriptwriter.js",
+    "narrator": "node src/apollo/narrator.js",
+    "slideforge": "node src/apollo/slideforge.js",
+    "renderer": "node src/apollo/renderer.js",
+    "validate": "node src/apollo/validator.js",
+    "quality:check": "node src/scripts/qualityEngine.js",
+    "quality:gates": "node src/scripts/qualityGates.js",
+    "quiz:generate": "node src/scripts/quizGenerator.js",
+    "optimize": "node src/scripts/courseOptimizer.js",
+    "notify": "node src/scripts/emailNotifier.js",
+    "batch": "node src/scripts/batchRunner.js",
+    "remotion:preview": "npx remotion preview src/remotion/Root.tsx",
+    "remotion:render": "npx remotion render src/remotion/Root.tsx CourseSlides"
+  },
+  "keywords": [
+    "udemy",
+    "course-generation",
+    "automation",
+    "education",
+    "ai",
+    "gemini",
+    "chatterbox",
+    "remotion"
+  ],
+  "author": "UdemyCrores",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "remotion": "^4.0.0",
+    "xlsx": "^0.18.5",
+    "sharp": "^0.32.6",
+    "nodemailer": "^6.9.8",
+    "dotenv": "^16.4.1",
+    "date-fns": "^3.3.1",
+    "uuid": "^9.0.0",
+    "pptxgenjs": "^3.12.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "pdf-lib": "^1.17.1",
+    "canvas": "^2.11.2",
+    "sanitize-filename": "^1.6.3",
+    "edge-tts": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.3",
+    "@remotion/eslint-config": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
